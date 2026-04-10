@@ -4,14 +4,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        charcoal: "#0D0D0D",
-        ember: "#FF6A00",
-        coal: "#1A1A1A",
-        ash: "#F5F5F5",
-        flame: "#A61B1B"
+        charcoal: "#090909",
+        ember: "#D4C49A",
+        coal: "#11140F",
+        ash: "#F3EBD8",
+        flame: "#51663F",
+        moss: "#27351E",
+        wine: "#4A2E22"
       },
       boxShadow: {
-        ember: "0 18px 60px rgba(255, 106, 0, 0.2)",
+        ember: "0 18px 60px rgba(212, 196, 154, 0.18)",
         card: "0 22px 70px rgba(0, 0, 0, 0.35)"
       }
     }

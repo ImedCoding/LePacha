@@ -1,252 +1,422 @@
 {
   "source": {
-    "label": "Uber Eats",
+    "label": "Menu du restaurant",
     "url": "https://www.ubereats.com/fr/store/le-pacha-2/mpdLkHqPQ42Z6RogjsnlsA",
     "lastChecked": "2026-04-10",
-    "note": "Prix indicatifs releves sur Uber Eats. A ajuster si les prix sur place changent."
+    "note": "Tarifs releves sur le menu papier du restaurant le 10 avril 2026."
   },
   "photoDirectory": "/menu",
   "photoInstructions": "Deposer les photos dans public/menu avec les noms photoFile ci-dessous. La page les affiche automatiquement quand les fichiers existent.",
   "sections": [
     {
-      "id": "assiettes",
-      "title": "Menus assiettes",
-      "shortTitle": "Assiettes",
-      "kicker": "Grill",
-      "description": "Grandes assiettes avec viandes, crudites, ble, frites et sauces.",
-      "photoFile": "menus-assiettes.jpg",
+      "id": "entrees",
+      "title": "Entrees turques",
+      "shortTitle": "Entrees",
+      "kicker": "Mezzes",
+      "description": "Patlican, houmous, beyaz peynir, cacik et autres assiettes froides pour commencer.",
+      "photoFile": "entrees.jpg",
       "items": [
         {
-          "id": "menu-assiette-mixte",
-          "name": "Menu assiette mixte",
-          "description": "3 viandes, crudites, ble et 2 sauces pour les frites.",
-          "price": "19,50 €",
-          "tags": ["3 viandes", "Copieux"],
-          "photoFile": "menu-assiette-mixte.jpg"
+          "id": "patlican-salatasi",
+          "name": "Patlican Salatasi",
+          "description": "Salade d'aubergines.",
+          "price": "5,00 ?",
+          "tags": [],
+          "photoFile": "patlican-salatasi.jpg"
         },
         {
-          "id": "menu-assiette-merguez",
-          "name": "Menu assiette merguez",
-          "description": "Merguez, crudites, ble et sauces pour les frites.",
-          "price": "15,90 €",
-          "tags": ["Merguez", "Grill"],
-          "photoFile": "menu-assiette-merguez.jpg"
+          "id": "patlican-ezme",
+          "name": "Patlican Ezme",
+          "description": "Aubergines ecrasees.",
+          "price": "5,00 ?",
+          "tags": [],
+          "photoFile": "patlican-ezme.jpg"
         },
         {
-          "id": "menu-assiette-grecque",
-          "name": "Menu assiette grecque",
-          "description": "Viande grecque, crudites et sauces pour les frites.",
-          "price": "15,90 €",
-          "tags": ["Kebab", "Classique"],
-          "photoFile": "menu-assiette-grecque.jpg"
+          "id": "beyaz-peynir",
+          "name": "Beyaz Peynir",
+          "description": "Fromage blanc turc.",
+          "price": "5,00 ?",
+          "tags": [],
+          "photoFile": "beyaz-peynir.jpg"
         },
         {
-          "id": "menu-assiette-cote-agneau",
-          "name": "Menu assiette cote d'agneau",
-          "description": "Cote d'agneau, crudites et sauces pour les frites.",
-          "price": "16,50 €",
-          "tags": ["Agneau", "Grill"],
-          "photoFile": "menu-assiette-cote-agneau.jpg"
+          "id": "sigara-boregi",
+          "name": "Sigara Boregi",
+          "description": "Borek roule au fromage.",
+          "price": "5,00 ?",
+          "tags": [],
+          "photoFile": "sigara-boregi.jpg"
         },
         {
-          "id": "menu-assiette-kefta",
-          "name": "Menu assiette kefta",
-          "description": "Kefta, crudites et sauces pour les frites.",
-          "price": "15,90 €",
-          "tags": ["Kefta", "Halal"],
-          "photoFile": "menu-assiette-kefta.jpg"
+          "id": "cacik",
+          "name": "Cacik",
+          "description": "Yaourt, concombre et ail.",
+          "price": "4,50 ?",
+          "tags": [],
+          "photoFile": "cacik.jpg"
         },
         {
-          "id": "menu-assiette-brochette-poulet",
-          "name": "Menu assiette brochette de poulet",
-          "description": "Brochette de poulet, crudites et sauces pour les frites.",
-          "price": "15,90 €",
-          "tags": ["Poulet", "Grill"],
-          "photoFile": "menu-assiette-brochette-poulet.jpg"
+          "id": "humus",
+          "name": "Humus",
+          "description": "Puree de pois chiches.",
+          "price": "5,00 ?",
+          "tags": [],
+          "photoFile": "humus.jpg"
         },
         {
-          "id": "menu-assiette-chicken",
-          "name": "Menu assiette chicken",
-          "description": "Chicken, crudites et sauces pour les frites.",
-          "price": "15,90 €",
-          "tags": ["Chicken", "Chaud"],
-          "photoFile": "menu-assiette-chicken.jpg"
+          "id": "sarma",
+          "name": "Sarma",
+          "description": "Feuilles de vigne farcies.",
+          "price": "3,50 ?",
+          "tags": [],
+          "photoFile": "sarma.jpg"
+        }
+      ]
+    },
+    {
+      "id": "assiettes",
+      "title": "Nos assiettes",
+      "shortTitle": "Assiettes",
+      "kicker": "Grill",
+      "description": "Assiettes servies avec garniture, crudites, ble et frites selon le plat.",
+      "photoFile": "assiettes.jpg",
+      "items": [
+        {
+          "id": "assiette-kebab",
+          "name": "Kebab",
+          "description": "Assiette kebab.",
+          "price": "12,00 ?",
+          "tags": [],
+          "photoFile": "assiette-kebab.jpg"
         },
         {
-          "id": "menu-assiette-steak",
-          "name": "Menu assiette steak",
-          "description": "Steak, crudites et sauces pour les frites.",
-          "price": "13,40 €",
-          "tags": ["Steak", "Simple"],
-          "photoFile": "menu-assiette-steak.jpg"
+          "id": "assiette-brochette-agneau",
+          "name": "Broch. Agneau",
+          "description": "Assiette brochette d'agneau.",
+          "price": "13,00 ?",
+          "tags": [],
+          "photoFile": "assiette-brochette-agneau.jpg"
+        },
+        {
+          "id": "assiette-brochette-poulet",
+          "name": "Broch. Poulet",
+          "description": "Assiette brochette de poulet.",
+          "price": "12,00 ?",
+          "tags": [],
+          "photoFile": "assiette-brochette-poulet.jpg"
+        },
+        {
+          "id": "assiette-adana",
+          "name": "Adana",
+          "description": "Assiette adana.",
+          "price": "12,00 ?",
+          "tags": [],
+          "photoFile": "assiette-adana.jpg"
+        },
+        {
+          "id": "assiette-kofte",
+          "name": "Kofte",
+          "description": "Assiette kofte.",
+          "price": "12,00 ?",
+          "tags": [],
+          "photoFile": "assiette-kofte.jpg"
+        },
+        {
+          "id": "assiette-cotelettes",
+          "name": "Cotelettes",
+          "description": "Assiette cotelettes.",
+          "price": "14,00 ?",
+          "tags": [],
+          "photoFile": "assiette-cotelettes.jpg"
+        },
+        {
+          "id": "assiette-chicken-curry",
+          "name": "Chicken Curry",
+          "description": "Assiette chicken curry.",
+          "price": "12,00 ?",
+          "tags": [],
+          "photoFile": "assiette-chicken-curry.jpg"
+        },
+        {
+          "id": "assiette-grillades-mixte",
+          "name": "Grillades Mixte",
+          "description": "Assiette grillades mixtes.",
+          "price": "16,00 ?",
+          "tags": [],
+          "photoFile": "assiette-grillades-mixte.jpg"
+        },
+        {
+          "id": "assiette-steak",
+          "name": "Steak",
+          "description": "Assiette steak.",
+          "price": "12,00 ?",
+          "tags": [],
+          "photoFile": "assiette-steak.jpg"
+        },
+        {
+          "id": "assiette-chef",
+          "name": "Chef",
+          "description": "Assiette du chef.",
+          "price": "14,00 ?",
+          "tags": [],
+          "photoFile": "assiette-chef.jpg"
+        },
+        {
+          "id": "assiette-merguez",
+          "name": "Merguez",
+          "description": "Assiette merguez.",
+          "price": "12,00 ?",
+          "tags": [],
+          "photoFile": "assiette-merguez.jpg"
+        },
+        {
+          "id": "assiette-cordon-bleu",
+          "name": "Cordon Bleu",
+          "description": "Assiette cordon bleu.",
+          "price": "12,00 ?",
+          "tags": [],
+          "photoFile": "assiette-cordon-bleu.jpg"
         }
       ]
     },
     {
       "id": "sandwichs",
-      "title": "Menus sandwichs",
+      "title": "Nos sandwichs",
       "shortTitle": "Sandwichs",
       "kicker": "Pain chaud",
-      "description": "Sandwichs halal servis avec frites, crudites et sauces au choix.",
-      "photoFile": "menus-sandwichs.jpg",
+      "description": "Sandwichs servis avec frites. Galettes au choix egalement disponibles au comptoir.",
+      "photoFile": "sandwichs.jpg",
       "items": [
         {
-          "id": "menu-sandwich-grec",
-          "name": "Menu sandwich grec",
-          "description": "Viande grecque, crudites, sauces, frites et boisson.",
-          "price": "11,50 €",
-          "tags": ["Kebab", "Classique"],
-          "photoFile": "menu-sandwich-grec.jpg"
+          "id": "sandwich-kebab",
+          "name": "Kebab",
+          "description": "Sandwich kebab avec frites.",
+          "price": "7,50 ?",
+          "tags": [],
+          "photoFile": "sandwich-kebab.jpg"
         },
         {
-          "id": "menu-sandwich-chicken",
-          "name": "Menu sandwich chicken",
-          "description": "Chicken, crudites, sauces, frites et boisson.",
-          "price": "11,50 €",
-          "tags": ["Chicken", "Sauces"],
-          "photoFile": "menu-sandwich-chicken.jpg"
+          "id": "sandwich-brochette-agneau",
+          "name": "Broch. Agneau",
+          "description": "Sandwich brochette d'agneau avec frites.",
+          "price": "9,00 ?",
+          "tags": [],
+          "photoFile": "sandwich-brochette-agneau.jpg"
         },
         {
-          "id": "menu-sandwich-2-viandes",
-          "name": "Menu sandwich 2 viandes",
-          "description": "2 viandes au choix, crudites, sauces, frites et boisson.",
-          "price": "13,50 €",
-          "tags": ["2 viandes", "Grosse faim"],
-          "photoFile": "menu-sandwich-2-viandes.jpg"
+          "id": "sandwich-adana",
+          "name": "Adana",
+          "description": "Sandwich adana avec frites.",
+          "price": "8,50 ?",
+          "tags": [],
+          "photoFile": "sandwich-adana.jpg"
         },
         {
-          "id": "tacos",
-          "name": "Tacos",
-          "description": "2 viandes au choix : chicken, tenders, kebab, steak, merguez, nuggets ou cordon bleu.",
-          "price": "12,50 €",
-          "tags": ["Tacos", "2 viandes"],
-          "photoFile": "tacos.jpg"
+          "id": "sandwich-special",
+          "name": "Special",
+          "description": "Sandwich special avec frites.",
+          "price": "8,50 ?",
+          "tags": [],
+          "photoFile": "sandwich-special.jpg"
         },
         {
-          "id": "menu-sandwich-3-viandes",
-          "name": "Menu sandwich 3 viandes",
-          "description": "3 viandes au choix, crudites, sauces, frites et boisson.",
-          "price": "15,50 €",
-          "tags": ["3 viandes", "Maxi"],
-          "photoFile": "menu-sandwich-3-viandes.jpg"
+          "id": "sandwich-kofte",
+          "name": "Kofte",
+          "description": "Sandwich kofte avec frites.",
+          "price": "8,50 ?",
+          "tags": [],
+          "photoFile": "sandwich-kofte.jpg"
         },
         {
-          "id": "menu-sandwich-cordon-bleu",
-          "name": "Menu sandwich cordon bleu",
-          "description": "Cordon bleu, crudites, sauces, frites et boisson.",
-          "price": "11,50 €",
-          "tags": ["Cordon bleu", "Fondant"],
-          "photoFile": "menu-sandwich-cordon-bleu.jpg"
+          "id": "sandwich-chicken",
+          "name": "Chicken",
+          "description": "Sandwich chicken avec frites.",
+          "price": "8,50 ?",
+          "tags": [],
+          "photoFile": "sandwich-chicken.jpg"
         },
         {
-          "id": "menu-sandwich-steak-fromage",
-          "name": "Menu sandwich steak fromage",
-          "description": "Steak fromage, crudites, sauces, frites et boisson.",
-          "price": "11,50 €",
-          "tags": ["Steak", "Fromage"],
-          "photoFile": "menu-sandwich-steak-fromage.jpg"
+          "id": "sandwich-steak",
+          "name": "Steak",
+          "description": "Sandwich steak avec frites.",
+          "price": "8,50 ?",
+          "tags": [],
+          "photoFile": "sandwich-steak.jpg"
         },
         {
-          "id": "menu-sandwich-kefta",
-          "name": "Menu sandwich kefta",
-          "description": "Kefta, crudites, sauces, frites et boisson.",
-          "price": "11,50 €",
-          "tags": ["Kefta", "Grill"],
-          "photoFile": "menu-sandwich-kefta.jpg"
+          "id": "sandwich-radikal",
+          "name": "Radikal",
+          "description": "Sandwich radikal avec frites.",
+          "price": "9,00 ?",
+          "tags": [],
+          "photoFile": "sandwich-radikal.jpg"
         },
         {
-          "id": "menu-sandwich-merguez",
-          "name": "Menu sandwich merguez",
-          "description": "Merguez, crudites, sauces, frites et boisson.",
-          "price": "11,50 €",
-          "tags": ["Merguez", "Chaud"],
-          "photoFile": "menu-sandwich-merguez.jpg"
+          "id": "sandwich-merguez",
+          "name": "Merguez",
+          "description": "Sandwich merguez avec frites.",
+          "price": "8,50 ?",
+          "tags": [],
+          "photoFile": "sandwich-merguez.jpg"
         },
         {
-          "id": "menu-sandwich-brochette-poulet",
-          "name": "Menu sandwich brochette poulet",
-          "description": "Brochette de poulet, crudites, sauces, frites et boisson.",
-          "price": "11,50 €",
-          "tags": ["Poulet", "Grill"],
-          "photoFile": "menu-sandwich-brochette-poulet.jpg"
+          "id": "sandwich-cordon-bleu",
+          "name": "Cordon Bleu",
+          "description": "Sandwich cordon bleu avec frites.",
+          "price": "8,00 ?",
+          "tags": [],
+          "photoFile": "sandwich-cordon-bleu.jpg"
         },
         {
-          "id": "menu-sandwich-twister-chicken",
-          "name": "Menu sandwich twister chicken",
-          "description": "Twister chicken, sauce pour les frites, frites et boisson.",
-          "price": "11,50 €",
-          "tags": ["Twister", "Chicken"],
-          "photoFile": "menu-sandwich-twister-chicken.jpg"
+          "id": "sandwich-brochette-poulet",
+          "name": "Broch. Poulet",
+          "description": "Sandwich brochette de poulet avec frites.",
+          "price": "8,50 ?",
+          "tags": [],
+          "photoFile": "sandwich-brochette-poulet.jpg"
         }
       ]
     },
     {
       "id": "burgers",
-      "title": "Menus burgers",
+      "title": "Nos burgers",
       "shortTitle": "Burgers",
-      "kicker": "Fast-food",
-      "description": "Burgers servis chauds avec frites.",
-      "photoFile": "menus-burgers.jpg",
+      "kicker": "Seul ou menu",
+      "description": "Cheeseburger, maxi burger et chicken burger en formule seule ou menu.",
+      "photoFile": "burgers.jpg",
       "items": [
         {
-          "id": "menu-chicken-burger",
-          "name": "Menu chicken burger",
-          "description": "Chicken burger servi avec frites.",
-          "price": "9,50 €",
-          "tags": ["Chicken", "Burger"],
-          "photoFile": "menu-chicken-burger.jpg"
+          "id": "cheeseburger",
+          "name": "Cheeseburger",
+          "description": "Disponible seul ou en menu.",
+          "prices": [
+            {
+              "label": "Seul",
+              "value": "6,50 ?"
+            },
+            {
+              "label": "Menu",
+              "value": "8,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "cheeseburger.jpg"
         },
         {
-          "id": "menu-double-cheeseburger",
-          "name": "Menu double cheeseburger",
-          "description": "Double cheeseburger servi avec frites.",
-          "price": "13,50 €",
-          "tags": ["Double", "Fromage"],
-          "photoFile": "menu-double-cheeseburger.jpg"
+          "id": "maxi-burger",
+          "name": "Maxi Burger",
+          "description": "Disponible seul ou en menu.",
+          "prices": [
+            {
+              "label": "Seul",
+              "value": "8,50 ?"
+            },
+            {
+              "label": "Menu",
+              "value": "10,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "maxi-burger.jpg"
+        },
+        {
+          "id": "chicken-burger",
+          "name": "Chicken Burger",
+          "description": "Disponible seul ou en menu.",
+          "prices": [
+            {
+              "label": "Seul",
+              "value": "6,50 ?"
+            },
+            {
+              "label": "Menu",
+              "value": "8,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "chicken-burger.jpg"
         }
       ]
     },
     {
       "id": "tex-mex",
-      "title": "Menus tex-mex",
-      "shortTitle": "Tex-mex",
-      "kicker": "Croustillant",
-      "description": "Wings et nuggets servis avec frites et sauces.",
-      "photoFile": "menus-tex-mex.jpg",
+      "title": "Nos tex-mex",
+      "shortTitle": "Tex-Mex",
+      "kicker": "Tres croustillant",
+      "description": "Tex-mex servis avec 6 pieces et frites.",
+      "photoFile": "tex-mex.jpg",
       "items": [
         {
-          "id": "menu-wings-epices",
-          "name": "Menu wings epices",
-          "description": "Wings epices avec nombre de pieces et 2 sauces au choix. Servi avec frites.",
-          "price": "10,50 €",
-          "tags": ["Wings", "Epice"],
-          "photoFile": "menu-wings-epices.jpg"
+          "id": "wings-epices",
+          "name": "Wings Epices",
+          "description": "6 pieces avec frites.",
+          "price": "7,50 ?",
+          "tags": [],
+          "photoFile": "wings-epices.jpg"
         },
         {
-          "id": "menu-nuggets",
-          "name": "Menu nuggets",
-          "description": "Nuggets avec nombre de pieces et 2 sauces au choix. Servi avec frites.",
-          "price": "9,50 €",
-          "tags": ["Nuggets", "Croustillant"],
-          "photoFile": "menu-nuggets.jpg"
+          "id": "nuggets",
+          "name": "Nuggets",
+          "description": "6 pieces avec frites.",
+          "price": "6,50 ?",
+          "tags": [],
+          "photoFile": "nuggets.jpg"
+        },
+        {
+          "id": "tenders",
+          "name": "Tenders",
+          "description": "6 pieces avec frites.",
+          "price": "7,50 ?",
+          "tags": [],
+          "photoFile": "tenders.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tacos",
+      "title": "Nos tacos",
+      "shortTitle": "Tacos",
+      "kicker": "2 viandes",
+      "description": "Viandes au choix : chicken, tenders, kebab, steak, merguez, nuggets ou cordon bleu.",
+      "photoFile": "tacos.jpg",
+      "items": [
+        {
+          "id": "tacos-2-viandes",
+          "name": "Tacos 2 viandes",
+          "description": "Menu tacos avec 2 viandes au choix.",
+          "price": "10,00 ?",
+          "tags": [
+            "2 viandes"
+          ],
+          "photoFile": "tacos-2-viandes.jpg"
         }
       ]
     },
     {
       "id": "paninis",
-      "title": "Menus paninis",
+      "title": "Nos paninis",
       "shortTitle": "Paninis",
-      "kicker": "Grille",
-      "description": "Panini chaud avec garniture au choix, frites et sauce.",
-      "photoFile": "menus-paninis.jpg",
+      "kicker": "Au choix",
+      "description": "Viande hachee, kebab, poulet, 3 fromages ou merguez.",
+      "photoFile": "paninis.jpg",
       "items": [
         {
-          "id": "menu-panini",
-          "name": "Menu panini",
-          "description": "Garniture au choix, servi avec frites et sauce pour les frites.",
-          "price": "10,50 €",
-          "tags": ["Panini", "Chaud"],
-          "photoFile": "menu-panini.jpg"
+          "id": "panini-au-choix",
+          "name": "Panini au choix",
+          "description": "Disponible seul ou en menu.",
+          "prices": [
+            {
+              "label": "Seul",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Menu",
+              "value": "8,50 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "panini-au-choix.jpg"
         }
       ]
     },
@@ -255,24 +425,535 @@
       "title": "Accompagnements",
       "shortTitle": "A cote",
       "kicker": "Extras",
-      "description": "Pour completer une commande ou partager.",
+      "description": "Supplements, frites et portions de viande pour completer la commande.",
       "photoFile": "accompagnements.jpg",
       "items": [
         {
-          "id": "barquette-viande-grecque",
-          "name": "Barquette de viande grecque",
-          "description": "Taille au choix.",
-          "price": "12,00 €",
-          "tags": ["Viande", "Barquette"],
-          "photoFile": "barquette-viande-grecque.jpg"
+          "id": "supplement-fromage",
+          "name": "Supplement fromage",
+          "description": "A ajouter sur sandwich, panini ou autre commande.",
+          "price": "0,50 ?",
+          "tags": [],
+          "photoFile": "supplement-fromage.jpg"
         },
         {
-          "id": "barquette-frites",
-          "name": "Barquette de frites",
-          "description": "Taille au choix.",
-          "price": "5,50 €",
-          "tags": ["Frites", "A partager"],
-          "photoFile": "barquette-frites.jpg"
+          "id": "supplement-oeuf",
+          "name": "Supplement oeuf",
+          "description": "A ajouter sur sandwich, panini ou autre commande.",
+          "price": "1,00 ?",
+          "tags": [],
+          "photoFile": "supplement-oeuf.jpg"
+        },
+        {
+          "id": "frites-petite",
+          "name": "Frites petite",
+          "description": "Petite portion.",
+          "price": "4,00 ?",
+          "tags": [],
+          "photoFile": "frites-petite.jpg"
+        },
+        {
+          "id": "frites-grande",
+          "name": "Frites grande",
+          "description": "Grande portion.",
+          "price": "5,00 ?",
+          "tags": [],
+          "photoFile": "frites-grande.jpg"
+        },
+        {
+          "id": "viandes-petite",
+          "name": "Viandes petite",
+          "description": "Petite barquette de viande.",
+          "price": "6,00 ?",
+          "tags": [],
+          "photoFile": "viandes-petite.jpg"
+        },
+        {
+          "id": "viandes-grande",
+          "name": "Viandes grande",
+          "description": "Grande barquette de viande.",
+          "price": "12,00 ?",
+          "tags": [],
+          "photoFile": "viandes-grande.jpg"
+        }
+      ]
+    },
+    {
+      "id": "pizzas-tomate",
+      "title": "Nos pizzas base tomate",
+      "shortTitle": "Pizzas tomate",
+      "kicker": "Junior / Senior / Mega",
+      "description": "Toutes les pizzas base tomate sont disponibles en trois tailles.",
+      "photoFile": "pizzas-tomate.jpg",
+      "items": [
+        {
+          "id": "pizza-marguarita",
+          "name": "Marguarita",
+          "description": "Sauce tomate, fromage, origan.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-marguarita.jpg"
+        },
+        {
+          "id": "pizza-4-saisons",
+          "name": "4 Saisons",
+          "description": "Sauce tomate, fromage, jambon, champignons, olives, poivrons, artichauts.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-4-saisons.jpg"
+        },
+        {
+          "id": "pizza-4-fromage",
+          "name": "4 Fromage",
+          "description": "Sauce tomate, fromage, brie, chevre, bleu.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-4-fromage.jpg"
+        },
+        {
+          "id": "pizza-paysanne",
+          "name": "Paysanne",
+          "description": "Sauce tomate, fromage, oignons, pomme de terre, raclette, jambon d'Aoste.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-paysanne.jpg"
+        },
+        {
+          "id": "pizza-thon",
+          "name": "Thon",
+          "description": "Sauce tomate, fromage, thon, olive, oeuf.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-thon.jpg"
+        },
+        {
+          "id": "pizza-calzone",
+          "name": "Calzone",
+          "description": "Sauce tomate, fromage, jambon, jaune d'oeuf.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-calzone.jpg"
+        },
+        {
+          "id": "pizza-chicken",
+          "name": "Chicken",
+          "description": "Sauce tomate, fromage, pomme de terre, raclette, poulet curry, creme fraiche.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-chicken.jpg"
+        },
+        {
+          "id": "pizza-kebab",
+          "name": "Kebab",
+          "description": "Sauce tomate, fromage, viande de kebab, oignon, poivron.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-kebab.jpg"
+        },
+        {
+          "id": "pizza-reina",
+          "name": "Reina",
+          "description": "Sauce tomate, fromage, jambon, champignons.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-reina.jpg"
+        },
+        {
+          "id": "pizza-atlantique",
+          "name": "Atlantique",
+          "description": "Sauce tomate, fromage, saumon fume, creme fraiche.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-atlantique.jpg"
+        },
+        {
+          "id": "pizza-oriental",
+          "name": "Oriental",
+          "description": "Sauce tomate, fromage, merguez, poivrons, oeuf, olives.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-oriental.jpg"
+        },
+        {
+          "id": "pizza-ocean",
+          "name": "Ocean",
+          "description": "Sauce tomate, fromage, fruits de mer, citron, persil.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-ocean.jpg"
+        },
+        {
+          "id": "pizza-napolitain",
+          "name": "Napolitain",
+          "description": "Sauce tomate, fromage, anchois, capres, oignons.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-napolitain.jpg"
+        },
+        {
+          "id": "pizza-campione",
+          "name": "Campione",
+          "description": "Sauce tomate, fromage, viande hachee, pomme de terre, raclette, oeuf, creme fraiche.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-campione.jpg"
+        },
+        {
+          "id": "pizza-roblochon",
+          "name": "Roblochon",
+          "description": "Sauce tomate, fromage, lardon, roblochon, oignon.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-roblochon.jpg"
+        },
+        {
+          "id": "pizza-barbecue",
+          "name": "Barbecue",
+          "description": "Sauce barbecue, poulet, merguez, viande hachee.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-barbecue.jpg"
+        }
+      ]
+    },
+    {
+      "id": "pizzas-creme",
+      "title": "Nos pizzas base creme fraiche",
+      "shortTitle": "Pizzas creme",
+      "kicker": "Junior / Senior / Mega",
+      "description": "Pizzas creme fraiche disponibles en trois tailles.",
+      "photoFile": "pizzas-creme.jpg",
+      "items": [
+        {
+          "id": "pizza-campagnarde",
+          "name": "Campagnarde",
+          "description": "Creme fraiche, fromage, poulet, roblochon, champignons.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-campagnarde.jpg"
+        },
+        {
+          "id": "pizza-americaine",
+          "name": "Americaine",
+          "description": "Creme fraiche, fromage, chorizo, champignons.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-americaine.jpg"
+        },
+        {
+          "id": "pizza-boursin",
+          "name": "Boursin",
+          "description": "Creme fraiche, fromage, viande hachee, pomme de terre, boursin.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-boursin.jpg"
+        },
+        {
+          "id": "pizza-saint-jacques",
+          "name": "Saint-Jacques",
+          "description": "Creme fraiche, fromage, noix de saint-jacques, poireaux.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-saint-jacques.jpg"
+        },
+        {
+          "id": "pizza-saumon",
+          "name": "Saumon",
+          "description": "Creme fraiche, fromage, saumon fume, citron, pomme de terre, raclette, persil.",
+          "prices": [
+            {
+              "label": "Junior",
+              "value": "7,00 ?"
+            },
+            {
+              "label": "Senior",
+              "value": "10,00 ?"
+            },
+            {
+              "label": "Mega",
+              "value": "15,00 ?"
+            }
+          ],
+          "tags": [],
+          "photoFile": "pizza-saumon.jpg"
+        }
+      ]
+    },
+    {
+      "id": "pizzawich",
+      "title": "Nos pizzawich",
+      "shortTitle": "Pizzawich",
+      "kicker": "Pate a pizza",
+      "description": "Pizzawich avec sauce au choix, fait avec de la pate a pizza.",
+      "photoFile": "pizzawich.jpg",
+      "items": [
+        {
+          "id": "pizzawich-au-choix",
+          "name": "Pizzawich au choix",
+          "description": "Sauce barbecue, samourai, curry, creme fraiche, mayonnaise ou sauce tomate. Garnitures : thon, saumon, poulet, viande hachee, merguez, jambon, lardons, boursin ou 3 fromages.",
+          "price": "7,00 ?",
+          "tags": [],
+          "photoFile": "pizzawich-au-choix.jpg"
         }
       ]
     },
@@ -281,130 +962,188 @@
       "title": "Desserts",
       "shortTitle": "Desserts",
       "kicker": "Sucre",
-      "description": "Une touche sucree apres le sandwich ou l'assiette.",
+      "description": "Baklawa, brownie, tarte au Daim et tiramisu.",
       "photoFile": "desserts.jpg",
       "items": [
         {
-          "id": "tiramisu",
-          "name": "Tiramisu",
-          "description": "Dessert italien au mascarpone, biscuits imbibes de cafe et cacao.",
-          "price": "4,00 €",
-          "tags": ["Frais", "Dessert"],
-          "photoFile": "tiramisu.jpg"
+          "id": "baklawa",
+          "name": "Baklawa",
+          "description": "3 pieces.",
+          "price": "4,00 ?",
+          "tags": [],
+          "photoFile": "baklawa.jpg"
+        },
+        {
+          "id": "brownie",
+          "name": "Brownie",
+          "description": "Brownie chocolat.",
+          "price": "3,00 ?",
+          "tags": [],
+          "photoFile": "brownie.jpg"
         },
         {
           "id": "tarte-daim",
           "name": "Tarte au Daim",
-          "description": "Dessert froid et gourmand.",
-          "price": "4,00 €",
-          "tags": ["Daim", "Dessert"],
+          "description": "Part de tarte.",
+          "price": "3,50 ?",
+          "tags": [],
           "photoFile": "tarte-daim.jpg"
+        },
+        {
+          "id": "tiramisu",
+          "name": "Tiramisu",
+          "description": "Dessert frais.",
+          "price": "3,50 ?",
+          "tags": [],
+          "photoFile": "tiramisu.jpg"
         }
       ]
     },
     {
       "id": "boissons",
-      "title": "Boissons",
+      "title": "Nos boissons",
       "shortTitle": "Boissons",
       "kicker": "Frais",
-      "description": "Canettes et boissons fraiches.",
+      "description": "Canettes, bouteilles, eau, Oasis et cafe-the.",
       "photoFile": "boissons.jpg",
       "items": [
         {
-          "id": "lipton-ice-tea",
-          "name": "Lipton Ice Tea",
-          "description": "33 cl.",
-          "price": "2,00 €",
-          "tags": ["33 cl"],
-          "photoFile": "lipton-ice-tea.jpg"
+          "id": "canette-33cl",
+          "name": "Canette 33cl",
+          "description": "Canette fraiche 33cl.",
+          "price": "1,50 ?",
+          "tags": [],
+          "photoFile": "canette-33cl.jpg"
         },
         {
-          "id": "orangina",
-          "name": "Orangina",
-          "description": "33 cl.",
-          "price": "2,00 €",
-          "tags": ["33 cl"],
-          "photoFile": "orangina.jpg"
+          "id": "bouteille-15l",
+          "name": "Bouteille 1,5L",
+          "description": "Bouteille 1,5L.",
+          "price": "3,50 ?",
+          "tags": [],
+          "photoFile": "bouteille-15l.jpg"
         },
         {
-          "id": "coca-cola-zero",
-          "name": "Coca-Cola zero",
-          "description": "33 cl.",
-          "price": "2,00 €",
-          "tags": ["33 cl"],
-          "photoFile": "coca-cola-zero.jpg"
+          "id": "eau-50cl",
+          "name": "Eau 50cl",
+          "description": "Bouteille d'eau 50cl.",
+          "price": "1,50 ?",
+          "tags": [],
+          "photoFile": "eau-50cl.jpg"
         },
         {
-          "id": "schweppes-agrum",
-          "name": "Schweppes agrum",
-          "description": "33 cl.",
-          "price": "2,00 €",
-          "tags": ["33 cl"],
-          "photoFile": "schweppes-agrum.jpg"
+          "id": "oasis-2l",
+          "name": "Oasis 2L",
+          "description": "Grande bouteille Oasis.",
+          "price": "4,00 ?",
+          "tags": [],
+          "photoFile": "oasis-2l.jpg"
         },
         {
-          "id": "7-up",
-          "name": "7 Up",
-          "description": "33 cl.",
-          "price": "2,00 €",
-          "tags": ["33 cl"],
-          "photoFile": "7-up.jpg"
+          "id": "cafe-the",
+          "name": "Cafe-The",
+          "description": "Cafe ou the.",
+          "price": "1,50 ?",
+          "tags": [],
+          "photoFile": "cafe-the.jpg"
+        }
+      ]
+    },
+    {
+      "id": "boissons-alcoolisees",
+      "title": "Nos boissons alcoolisees",
+      "shortTitle": "Boissons alcool.",
+      "kicker": "Bieres et vins",
+      "description": "Bieres, vins en bouteille, pichet et verre tels qu'affiches sur le menu du restaurant.",
+      "photoFile": "boissons-alcoolisees.jpg",
+      "items": [
+        {
+          "id": "desperados-33cl",
+          "name": "Desperados 33cl",
+          "description": "Biere 33cl.",
+          "price": "3,50 ?",
+          "tags": [],
+          "photoFile": "desperados-33cl.jpg"
         },
         {
-          "id": "coca-cola",
-          "name": "Coca-Cola",
-          "description": "Taille au choix.",
-          "price": "2,00 €",
-          "tags": ["Frais"],
-          "photoFile": "coca-cola.jpg"
+          "id": "1664-33cl",
+          "name": "1664 33cl",
+          "description": "Biere 33cl.",
+          "price": "3,50 ?",
+          "tags": [],
+          "photoFile": "1664-33cl.jpg"
         },
         {
-          "id": "tropico",
-          "name": "Tropico",
-          "description": "33 cl.",
-          "price": "2,00 €",
-          "tags": ["33 cl"],
-          "photoFile": "tropico.jpg"
+          "id": "super-bock-25cl",
+          "name": "Super Bock 25cl",
+          "description": "Biere 25cl.",
+          "price": "3,00 ?",
+          "tags": [],
+          "photoFile": "super-bock-25cl.jpg"
         },
         {
-          "id": "fanta",
-          "name": "Fanta",
-          "description": "Taille au choix.",
-          "price": "2,00 €",
-          "tags": ["Frais"],
-          "photoFile": "fanta.jpg"
+          "id": "leffe-33cl",
+          "name": "Leffe 33cl",
+          "description": "Biere 33cl.",
+          "price": "3,50 ?",
+          "tags": [],
+          "photoFile": "leffe-33cl.jpg"
         },
         {
-          "id": "oasis",
-          "name": "Oasis",
-          "description": "33 cl.",
-          "price": "2,00 €",
-          "tags": ["33 cl"],
-          "photoFile": "oasis.jpg"
+          "id": "bud-25cl",
+          "name": "Bud 25cl",
+          "description": "Biere 25cl.",
+          "price": "3,00 ?",
+          "tags": [],
+          "photoFile": "bud-25cl.jpg"
         },
         {
-          "id": "cristaline-peche",
-          "name": "Cristaline peche",
-          "description": "50 cl.",
-          "price": "3,00 €",
-          "tags": ["50 cl"],
-          "photoFile": "cristaline-peche.jpg"
+          "id": "heineken-25cl",
+          "name": "Heineken 25cl",
+          "description": "Biere 25cl.",
+          "price": "3,00 ?",
+          "tags": [],
+          "photoFile": "heineken-25cl.jpg"
         },
         {
-          "id": "cristaline-fraise",
-          "name": "Cristaline fraise",
-          "description": "50 cl.",
-          "price": "3,00 €",
-          "tags": ["50 cl"],
-          "photoFile": "cristaline-fraise.jpg"
+          "id": "porta-da-ravessa",
+          "name": "Porta da Ravessa",
+          "description": "Vin rouge 75cl.",
+          "price": "15,00 ?",
+          "tags": [],
+          "photoFile": "porta-da-ravessa.jpg"
         },
         {
-          "id": "cristaline-tropical",
-          "name": "Cristaline tropical",
-          "description": "50 cl.",
-          "price": "2,00 €",
-          "tags": ["50 cl"],
-          "photoFile": "cristaline-tropical.jpg"
+          "id": "casal-mendes",
+          "name": "Casal Mendes",
+          "description": "Vin rose 75cl.",
+          "price": "15,00 ?",
+          "tags": [],
+          "photoFile": "casal-mendes.jpg"
+        },
+        {
+          "id": "beira-serra-1-4",
+          "name": "Beira Serra 1/4",
+          "description": "Pichet 1/4.",
+          "price": "4,50 ?",
+          "tags": [],
+          "photoFile": "beira-serra-1-4.jpg"
+        },
+        {
+          "id": "beira-serra-2-4",
+          "name": "Beira Serra 2/4",
+          "description": "Pichet 2/4.",
+          "price": "9,00 ?",
+          "tags": [],
+          "photoFile": "beira-serra-2-4.jpg"
+        },
+        {
+          "id": "verre-rose-rouge",
+          "name": "Verre",
+          "description": "Rose ou rouge.",
+          "price": "2,00 ?",
+          "tags": [],
+          "photoFile": "verre-rose-rouge.jpg"
         }
       ]
     }
@@ -412,261 +1151,89 @@
   "translations": {
     "tr": {
       "sections": {
+        "entrees": {
+          "title": "Turk baslangiclari",
+          "shortTitle": "Baslangic",
+          "kicker": "Meze",
+          "description": "Patlican, humus, beyaz peynir, cacik ve diger soguk baslangiclar."
+        },
         "assiettes": {
-          "title": "Tabak menuleri",
+          "title": "Tabaklar",
           "shortTitle": "Tabaklar",
           "kicker": "Izgara",
-          "description": "Et, salata, bulgur, patates ve soslarla doyurucu tabaklar.",
-          "items": {
-            "menu-assiette-mixte": {
-              "name": "Karisik tabak menu",
-              "description": "3 et, salata, bulgur ve patates icin 2 sos.",
-              "tags": ["3 et", "Doyurucu"]
-            },
-            "menu-assiette-merguez": {
-              "name": "Merguez tabak menu",
-              "description": "Merguez, salata, bulgur ve patates soslari.",
-              "tags": ["Merguez", "Izgara"]
-            },
-            "menu-assiette-grecque": {
-              "name": "Grec tabak menu",
-              "description": "Grec eti, salata ve patates soslari.",
-              "tags": ["Kebap", "Klasik"]
-            },
-            "menu-assiette-cote-agneau": {
-              "name": "Kuzu pirzola tabak menu",
-              "description": "Kuzu pirzola, salata ve patates soslari.",
-              "tags": ["Kuzu", "Izgara"]
-            },
-            "menu-assiette-kefta": {
-              "name": "Kofte tabak menu",
-              "description": "Kofte, salata ve patates soslari.",
-              "tags": ["Kofte", "Helal"]
-            },
-            "menu-assiette-brochette-poulet": {
-              "name": "Tavuk sis tabak menu",
-              "description": "Tavuk sis, salata ve patates soslari.",
-              "tags": ["Tavuk", "Izgara"]
-            },
-            "menu-assiette-chicken": {
-              "name": "Chicken tabak menu",
-              "description": "Chicken, salata ve patates soslari.",
-              "tags": ["Chicken", "Sicak"]
-            },
-            "menu-assiette-steak": {
-              "name": "Steak tabak menu",
-              "description": "Steak, salata ve patates soslari.",
-              "tags": ["Steak", "Sade"]
-            }
-          }
+          "description": "Tabaklar garnitur, salata, bulgur ve patates ile servis edilir."
         },
         "sandwichs": {
-          "title": "Sandvic menuleri",
+          "title": "Sandvicler",
           "shortTitle": "Sandvicler",
           "kicker": "Sicak ekmek",
-          "description": "Patates, salata ve secili soslarla servis edilen helal sandvicler.",
-          "items": {
-            "menu-sandwich-grec": {
-              "name": "Grec sandvic menu",
-              "description": "Grec eti, salata, soslar, patates ve icecek.",
-              "tags": ["Kebap", "Klasik"]
-            },
-            "menu-sandwich-chicken": {
-              "name": "Chicken sandvic menu",
-              "description": "Chicken, salata, soslar, patates ve icecek.",
-              "tags": ["Chicken", "Soslar"]
-            },
-            "menu-sandwich-2-viandes": {
-              "name": "2 etli sandvic menu",
-              "description": "2 et secimi, salata, soslar, patates ve icecek.",
-              "tags": ["2 et", "Buyuk aclik"]
-            },
-            "tacos": {
-              "name": "Tacos",
-              "description": "2 et secimi: chicken, tenders, kebap, steak, merguez, nuggets veya cordon bleu.",
-              "tags": ["Tacos", "2 et"]
-            },
-            "menu-sandwich-3-viandes": {
-              "name": "3 etli sandvic menu",
-              "description": "3 et secimi, salata, soslar, patates ve icecek.",
-              "tags": ["3 et", "Maxi"]
-            },
-            "menu-sandwich-cordon-bleu": {
-              "name": "Cordon bleu sandvic menu",
-              "description": "Cordon bleu, salata, soslar, patates ve icecek.",
-              "tags": ["Cordon bleu", "Eriyik"]
-            },
-            "menu-sandwich-steak-fromage": {
-              "name": "Steak peynir sandvic menu",
-              "description": "Steak peynir, salata, soslar, patates ve icecek.",
-              "tags": ["Steak", "Peynir"]
-            },
-            "menu-sandwich-kefta": {
-              "name": "Kofte sandvic menu",
-              "description": "Kofte, salata, soslar, patates ve icecek.",
-              "tags": ["Kofte", "Izgara"]
-            },
-            "menu-sandwich-merguez": {
-              "name": "Merguez sandvic menu",
-              "description": "Merguez, salata, soslar, patates ve icecek.",
-              "tags": ["Merguez", "Sicak"]
-            },
-            "menu-sandwich-brochette-poulet": {
-              "name": "Tavuk sis sandvic menu",
-              "description": "Tavuk sis, salata, soslar, patates ve icecek.",
-              "tags": ["Tavuk", "Izgara"]
-            },
-            "menu-sandwich-twister-chicken": {
-              "name": "Twister chicken sandvic menu",
-              "description": "Twister chicken, patates sosu, patates ve icecek.",
-              "tags": ["Twister", "Chicken"]
-            }
-          }
+          "description": "Patatesle servis edilen sandvicler. Galette secenekleri de bulunur."
         },
         "burgers": {
-          "title": "Burger menuleri",
+          "title": "Burgerler",
           "shortTitle": "Burgerler",
-          "kicker": "Fast-food",
-          "description": "Patatesle servis edilen sicak burgerler.",
-          "items": {
-            "menu-chicken-burger": {
-              "name": "Chicken burger menu",
-              "description": "Patatesle servis edilen chicken burger.",
-              "tags": ["Chicken", "Burger"]
-            },
-            "menu-double-cheeseburger": {
-              "name": "Double cheeseburger menu",
-              "description": "Patatesle servis edilen double cheeseburger.",
-              "tags": ["Double", "Peynir"]
-            }
-          }
+          "kicker": "Tek ya da menu",
+          "description": "Cheeseburger, maxi burger ve chicken burger tek ya da menu olarak."
         },
         "tex-mex": {
-          "title": "Tex-mex menuleri",
-          "shortTitle": "Tex-mex",
+          "title": "Tex-Mex",
+          "shortTitle": "Tex-Mex",
           "kicker": "Citir",
-          "description": "Patates ve soslarla servis edilen wings ve nuggets.",
-          "items": {
-            "menu-wings-epices": {
-              "name": "Acili wings menu",
-              "description": "Adet secimi ve 2 sosla acili wings. Patatesle servis edilir.",
-              "tags": ["Wings", "Acili"]
-            },
-            "menu-nuggets": {
-              "name": "Nuggets menu",
-              "description": "Adet secimi ve 2 sosla nuggets. Patatesle servis edilir.",
-              "tags": ["Nuggets", "Citir"]
-            }
-          }
+          "description": "6 parca ve patates ile servis edilir."
+        },
+        "tacos": {
+          "title": "Tacos",
+          "shortTitle": "Tacos",
+          "kicker": "2 et",
+          "description": "Chicken, tenders, kebap, steak, merguez, nuggets veya cordon bleu secenekleri."
         },
         "paninis": {
-          "title": "Panini menuleri",
+          "title": "Paniniler",
           "shortTitle": "Panini",
-          "kicker": "Tost",
-          "description": "Secili garniturle sicak panini, patates ve sos.",
-          "items": {
-            "menu-panini": {
-              "name": "Panini menu",
-              "description": "Garnitur secimi, patates ve patates sosu ile servis edilir.",
-              "tags": ["Panini", "Sicak"]
-            }
-          }
+          "kicker": "Secmeli",
+          "description": "Kiymali, kebapli, tavuklu, 3 peynirli veya merguezli."
         },
         "accompagnements": {
           "title": "Yan urunler",
           "shortTitle": "Ekstra",
           "kicker": "Ekstra",
-          "description": "Siparisi tamamlamak veya paylasmak icin.",
-          "items": {
-            "barquette-viande-grecque": {
-              "name": "Grec eti porsiyonu",
-              "description": "Boy secimi.",
-              "tags": ["Et", "Porsiyon"]
-            },
-            "barquette-frites": {
-              "name": "Patates porsiyonu",
-              "description": "Boy secimi.",
-              "tags": ["Patates", "Paylasmalik"]
-            }
-          }
+          "description": "Ek malzemeler, patates ve et porsiyonlari."
+        },
+        "pizzas-tomate": {
+          "title": "Domates soslu pizzalar",
+          "shortTitle": "Pizza domates",
+          "kicker": "Junior / Senior / Mega",
+          "description": "Tum domates bazli pizzalar uc boyda sunulur."
+        },
+        "pizzas-creme": {
+          "title": "Krema bazli pizzalar",
+          "shortTitle": "Pizza krema",
+          "kicker": "Junior / Senior / Mega",
+          "description": "Krema bazli pizzalar uc boyda sunulur."
+        },
+        "pizzawich": {
+          "title": "Pizzawich",
+          "shortTitle": "Pizzawich",
+          "kicker": "Pizza hamuru",
+          "description": "Pizza hamuruyla hazirlanan, sos secimli pizzawich."
         },
         "desserts": {
           "title": "Tatlilar",
-          "shortTitle": "Tatlilar",
+          "shortTitle": "Tatli",
           "kicker": "Tatli",
-          "description": "Sandvic veya tabaktan sonra tatli bir final.",
-          "items": {
-            "tiramisu": {
-              "name": "Tiramisu",
-              "description": "Mascarpone, kahveye batirilmis biskuvi ve kakao ile Italyan tatlisi.",
-              "tags": ["Soguk", "Tatli"]
-            },
-            "tarte-daim": {
-              "name": "Daim tart",
-              "description": "Soguk ve lezzetli tatli.",
-              "tags": ["Daim", "Tatli"]
-            }
-          }
+          "description": "Baklawa, brownie, daim tart ve tiramisu."
         },
         "boissons": {
           "title": "Icecekler",
           "shortTitle": "Icecekler",
           "kicker": "Soguk",
-          "description": "Kutular ve soguk icecekler.",
-          "items": {
-            "lipton-ice-tea": {
-              "description": "33 cl.",
-              "tags": ["33 cl"]
-            },
-            "orangina": {
-              "description": "33 cl.",
-              "tags": ["33 cl"]
-            },
-            "coca-cola-zero": {
-              "name": "Coca-Cola zero",
-              "description": "33 cl.",
-              "tags": ["33 cl"]
-            },
-            "schweppes-agrum": {
-              "description": "33 cl.",
-              "tags": ["33 cl"]
-            },
-            "7-up": {
-              "description": "33 cl.",
-              "tags": ["33 cl"]
-            },
-            "coca-cola": {
-              "description": "Boy secimi.",
-              "tags": ["Soguk"]
-            },
-            "tropico": {
-              "description": "33 cl.",
-              "tags": ["33 cl"]
-            },
-            "fanta": {
-              "description": "Boy secimi.",
-              "tags": ["Soguk"]
-            },
-            "oasis": {
-              "description": "33 cl.",
-              "tags": ["33 cl"]
-            },
-            "cristaline-peche": {
-              "name": "Cristaline seftali",
-              "description": "50 cl.",
-              "tags": ["50 cl"]
-            },
-            "cristaline-fraise": {
-              "name": "Cristaline cilek",
-              "description": "50 cl.",
-              "tags": ["50 cl"]
-            },
-            "cristaline-tropical": {
-              "name": "Cristaline tropikal",
-              "description": "50 cl.",
-              "tags": ["50 cl"]
-            }
-          }
+          "description": "Kutu icecekler, buyuk siseler, su, Oasis ve cay-kahve."
+        },
+        "boissons-alcoolisees": {
+          "title": "Alkollu icecekler",
+          "shortTitle": "Alkollu",
+          "kicker": "Bira ve sarap",
+          "description": "Restoran menusunde gorunen biralar, saraplar, karaf ve bardaklar."
         }
       }
     }

@@ -4,7 +4,7 @@
 
 :root {
   color-scheme: dark;
-  background: #0d0d0d;
+  background: #090909;
 }
 
 * {
@@ -21,33 +21,43 @@ body {
   margin: 0;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at 78% 8%, rgba(255, 106, 0, 0.18), transparent 30rem),
-    radial-gradient(circle at 0% 42%, rgba(166, 27, 27, 0.18), transparent 28rem),
-    #0d0d0d;
-  color: #f5f5f5;
-  font-family: Arial, Helvetica, sans-serif;
+    radial-gradient(circle at 82% 8%, rgba(212, 196, 154, 0.14), transparent 28rem),
+    radial-gradient(circle at 0% 40%, rgba(81, 102, 63, 0.2), transparent 26rem),
+    radial-gradient(circle at 78% 100%, rgba(74, 46, 34, 0.24), transparent 22rem),
+    #090909;
+  color: #f3ebd8;
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
 }
 
 ::selection {
-  background: rgba(255, 106, 0, 0.8);
-  color: #0d0d0d;
+  background: rgba(212, 196, 154, 0.85);
+  color: #090909;
+}
+
+.display-type {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+.script-type {
+  font-family: var(--font-script), cursive;
+  font-weight: 400;
 }
 
 .fire-noise {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
   background-size: 34px 34px;
 }
 
 .brand-outline {
-  -webkit-text-stroke: 1px rgba(255, 106, 0, 0.72);
-  text-stroke: 1px rgba(255, 106, 0, 0.72);
+  -webkit-text-stroke: 1px rgba(212, 196, 154, 0.6);
+  text-stroke: 1px rgba(212, 196, 154, 0.6);
 }
 
 .text-shadow-fire {
   text-shadow:
-    0 0 22px rgba(255, 106, 0, 0.22),
+    0 0 22px rgba(212, 196, 154, 0.12),
     0 18px 54px rgba(0, 0, 0, 0.72);
 }
 
@@ -55,15 +65,15 @@ body {
 .mobile-food-burst,
 .menu-spotlight,
 .street-panel {
-  clip-path: polygon(0 0, 100% 3%, 94% 100%, 0 96%);
+  clip-path: polygon(0 0, 100% 2%, 96% 100%, 0 97%);
 }
 
 .brand-stamp {
-  clip-path: polygon(0 0, 100% 0, 92% 100%, 0 92%);
+  clip-path: polygon(0 0, 100% 0, 94% 100%, 0 92%);
 }
 
 .menu-board-cut {
-  clip-path: polygon(0 0, 100% 2%, 96% 100%, 0 98%);
+  clip-path: polygon(0 0, 100% 1.5%, 96% 100%, 0 98%);
 }
 
 .brand-button {
@@ -72,8 +82,8 @@ body {
 
 .proof-ticket {
   background:
-    linear-gradient(90deg, rgba(255, 106, 0, 0.18), transparent 22%),
-    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 18px);
+    linear-gradient(90deg, rgba(81, 102, 63, 0.18), transparent 24%),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 18px);
 }
 
 .menu-blade {
@@ -84,7 +94,7 @@ body {
 }
 
 .menu-blade:hover {
-  background: linear-gradient(90deg, rgba(255, 106, 0, 0.12), transparent 52%);
+  background: linear-gradient(90deg, rgba(81, 102, 63, 0.14), transparent 52%);
   padding-left: 0.75rem;
 }
 
@@ -117,9 +127,9 @@ body {
   bottom: -18%;
   width: 22rem;
   height: 42rem;
-  background: linear-gradient(to top, rgba(255, 106, 0, 0.2), transparent 68%);
-  filter: blur(22px);
-  opacity: 0.45;
+  background: linear-gradient(to top, rgba(212, 196, 154, 0.14), transparent 68%);
+  filter: blur(24px);
+  opacity: 0.36;
   transform: rotate(8deg);
   animation: heatRise 7s ease-in-out infinite alternate;
 }
@@ -137,11 +147,11 @@ body {
 @keyframes heatRise {
   from {
     transform: translateY(0) skewX(-3deg);
-    opacity: 0.28;
+    opacity: 0.24;
   }
   to {
     transform: translateY(-42px) skewX(4deg);
-    opacity: 0.48;
+    opacity: 0.42;
   }
 }
 
@@ -155,4 +165,34 @@ body {
   .brand-marquee {
     animation: none;
   }
+}
+
+/* modern rounded scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 999px;
+  margin: 6px 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(140, 142, 69, 0.95), rgba(212, 196, 154, 0.85));
+  border-radius: 999px;
+  border: 2px solid rgba(9, 9, 9, 0.92);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(172, 174, 96, 1), rgba(242, 210, 156, 0.95));
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(172, 174, 96, 1), rgba(242, 210, 156, 0.95);
 }

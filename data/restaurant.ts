@@ -8,14 +8,15 @@ export const restaurant = {
     href: "+33169426934"
   },
   links: {
-    uberEats: "https://www.ubereats.com/fr/store/le-pacha-2/mpdLkHqPQ42Z6RogjsnlsA",
+    uberEats:
+      "https://www.ubereats.com/fr/store/le-pacha-2/mpdLkHqPQ42Z6RogjsnlsA",
     phone: "tel:+33169426934",
     whatsapp: "https://wa.me/33169426934"
   },
   hours: {
     compact: "11:00 - 22:00",
-    shortFr: "Lun-dim : 11:00 - 22:00",
-    shortTr: "Pzt-paz: 11:00 - 22:00"
+    shortFr: "Lun-sam : 11:00 - 22:00",
+    shortTr: "Pzt-cmt: 11:00 - 22:00"
   },
   rating: {
     value: "4.2",
@@ -24,11 +25,11 @@ export const restaurant = {
   images: {
     hero: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1800&q=85",
     heroMobile: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=88",
-    heroProduct: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1400&q=88",
-    menuSpotlight: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1400&q=88",
-    flameWall: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1800&q=85",
+    heroProduct: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1400&q=88",
+    menuSpotlight: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=1400&q=88",
+    flameWall: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1800&q=85",
     streetFood: "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1600&q=85",
-    finalCta: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1800&q=85"
+    finalCta: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1800&q=85"
   }
 };
 
@@ -45,92 +46,98 @@ export const content = {
       lang: "TR"
     },
     hero: {
-      eyebrow: "Kebab halal a Draveil",
+      eyebrow: "Restaurant turc a Draveil",
       title: ["Le", "Pacha"],
-      tagline: "Grillades chaudes. Portions genereuses.",
-      text: "Kebabs, assiettes, tacos et burgers halal. Sur place, a emporter ou en livraison.",
+      tagline: "Grillades, kebabs, pizzas. Service rapide.",
+      text: "Assiettes turques, sandwichs, burgers, pizzas et desserts. Sur place, a emporter ou en livraison.",
       primary: "Commander",
       secondary: "Appeler",
-      menuCta: "Voir le menu",
-      menuShortCta: "Voir le menu",
-      quickMenuLabel: "Voir le menu",
-      quickMenuItems: ["Kebab", "Assiettes", "Tacos", "Burgers"],
-      productLabel: "Grille, sauce, croustillant",
-      productTitle: "Pret quand la faim arrive.",
+      menuCta: "Voir la carte",
+      menuShortCta: "Voir la carte",
+      quickMenuLabel: "Voir la carte",
+      quickMenuItems: ["Assiettes", "Sandwichs", "Pizzas", "Desserts"],
+      productLabel: "Specialites turques",
+      productTitle: "Le grill, le four, le bon rythme.",
       ratingLabel: "Note Uber Eats",
       ratingText: "avis locaux",
-      serviceLabel: "Sur place / livraison de 11h a 22h",
-      deliveryLabel: "Livraison de 11h a 22h",
+      serviceLabel: "Lun-sam, 11h a 22h",
+      deliveryLabel: "Lun-sam, 11h a 22h",
       addressShort: "154 Boulevard Henri Barbusse"
     },
-    ticker: ["kebab Draveil", "restaurant halal Draveil", "tacos Draveil", "fast food Draveil", "grillades halal"],
+    ticker: [
+      "restaurant turc Draveil",
+      "kebab Draveil",
+      "pizza Draveil",
+      "restaurant halal Draveil",
+      "fast food Draveil"
+    ],
     proof: {
       eyebrow: "Avis clients",
-      title: "Simple, rapide, regulier.",
+      title: "Une adresse connue a Draveil.",
       ratingLabel: "avis"
     },
     reviews: [
       {
-        title: "Rapide et bon",
-        text: "Commande prete vite, repas chaud."
+        title: "Toujours regulier",
+        text: "Service rapide et assiettes bien servies."
       },
       {
-        title: "Bien servi",
-        text: "Sandwichs charges, assiettes copieuses."
+        title: "Bon et copieux",
+        text: "Kebab, pizza ou burger, on repart cale."
       },
       {
-        title: "Toujours pratique",
-        text: "Une bonne adresse pour manger halal a Draveil."
+        title: "Pratique le soir",
+        text: "Une adresse simple a retenir pour manger sur Draveil."
       }
     ],
     menu: {
-      eyebrow: "A la carte",
-      title: "Choisis ce qui te fait envie.",
-      text: "Kebabs, assiettes grillees, tacos, burgers, frites et boissons.",
-      fullCta: "Voir tout le menu",
-      spotlight: "Grille, sauce, frites. C'est direct.",
+      eyebrow: "La carte",
+      title: "Du grill au four.",
+      text: "Entrees turques, assiettes, sandwichs, burgers, pizzas, desserts et boissons.",
+      fullCta: "Voir le menu officiel",
+      spotlight: "Viandes, pains chauds, pizzas, desserts.",
       categories: [
         {
-          title: "Kebabs / Sandwichs",
-          kicker: "Classique",
-          description: "Viande grillee, pain chaud, sauce et frites.",
-          image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=80",
-          alt: "Sandwich kebab avec viande grillee"
-        },
-        {
-          title: "Assiettes grillees",
-          kicker: "Copieux",
-          description: "Poulet, merguez, mix grill, frites et accompagnements.",
+          title: "Assiettes turques",
+          kicker: "Specialites",
+          description: "Kebab, koftes, adana, merguez, steak et grillades mixtes.",
           image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=900&q=80",
-          alt: "Assiette de viande grillee"
+          alt: "Assiette de grillades"
         },
         {
-          title: "Tacos / Burgers",
+          title: "Sandwichs",
+          kicker: "Rapide",
+          description: "Kebab, chicken, adana, cordon bleu et brochettes servis avec frites.",
+          image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=80",
+          alt: "Sandwich kebab chaud"
+        },
+        {
+          title: "Burgers et tacos",
           kicker: "Gourmand",
-          description: "Des formats bien chauds pour une grosse faim.",
-          image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=900&q=80",
-          alt: "Tacos garnis servis chauds"
+          description: "Cheeseburger, maxi burger, chicken burger, wings, nuggets et tacos.",
+          image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80",
+          alt: "Burger servi chaud"
         },
         {
-          title: "Sides / Boissons",
-          kicker: "En plus",
-          description: "Frites, wings, nuggets et boissons fraiches.",
-          image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=80",
-          alt: "Frites croustillantes"
+          title: "Pizzas",
+          kicker: "Au four",
+          description: "Base tomate ou creme fraiche, du junior au mega.",
+          image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=900&q=80",
+          alt: "Pizza chaude au four"
         }
       ]
     },
     menuPage: {
       seo: {
-        title: "Menu complet Le Pacha | Kebab, tacos et halal a Draveil",
+        title: "Menu officiel Le Pacha | Grillades, pizzas et kebabs a Draveil",
         description:
-          "Menu complet de Le Pacha a Draveil : kebabs, sandwichs, assiettes, tacos, burgers, tex-mex, desserts et boissons.",
+          "Carte officielle relevee sur place chez Le Pacha a Draveil : entrees turques, assiettes, sandwichs, burgers, tacos, pizzas, desserts et boissons.",
         keywords: [
           "menu Le Pacha",
+          "pizza Draveil",
           "kebab Draveil menu",
-          "halal restaurant Draveil menu",
-          "tacos Draveil",
-          "fast food Draveil"
+          "restaurant turc Draveil",
+          "restaurant halal Draveil menu"
         ]
       },
       header: {
@@ -139,90 +146,91 @@ export const content = {
         info: "Infos"
       },
       hero: {
-        eyebrow: "Menu Le Pacha - Draveil",
+        eyebrow: "Carte officielle - Draveil",
+        kicker: "Specialites turques",
         title: "Menu",
-        outline: "complet",
-        tagline: "Choisis ton menu. On s'occupe du reste.",
-        text: "Sandwich grec, assiette mixte, tacos 2 viandes, wings ou burger : prends ce qui cale, chaud et halal a Draveil.",
-        boardEyebrow: "Les classiques sont prets.",
-        boardText: "Du pain chaud, de la viande grillee, des frites et des sauces. Simple, rapide, bien servi.",
-        addressKicker: "Sur place, a emporter, livraison",
-        addressTitle: "kebab halal Draveil",
+        outline: "officiel",
+        tagline: "Nos specialites turques.",
+        text: "Entrees turques, assiettes, sandwichs, burgers, pizzas, desserts et boissons. Les prix suivent le menu affiche au restaurant.",
+        boardEyebrow: "Le Pacha",
+        boardText: "Du grill, du four et des portions bien servies. Toute la carte est ici, avec les vraies formules et les vraies tailles.",
+        addressKicker: "154 Boulevard Henri Barbusse",
+        addressTitle: "Ouvert lun-sam, 11h-22h",
         stats: [
-          { number: "8", label: "familles" },
-          { number: "40", label: "articles" },
+          { number: "14", label: "familles" },
+          { number: "86", label: "plats" },
           { number: "11-22", label: "horaires" }
         ]
       },
       intro: {
-        eyebrow: "Menu complet",
-        title: "Repere ton envie. Commande sans hesiter.",
+        eyebrow: "Carte relevee sur place",
+        title: "Du comptoir au four, tout est la.",
         note:
-          "Prix indicatifs Uber Eats. Sur place, demande l'offre du moment."
+          "Tarifs releves sur le menu papier du restaurant le 10 avril 2026. Certains plats ont plusieurs tailles ou formules."
       },
       finalCta: {
-        eyebrow: "Une envie precise ?",
-        title: "La faim monte ? Passe commande.",
+        eyebrow: "Une commande a faire ?",
+        title: "Choisis, appelle, ou passe par Uber Eats.",
         text:
-          "Le Pacha, kebab Draveil, restaurant halal Draveil, tacos Draveil et fast food Draveil au 154 Boulevard Henri Barbusse."
+          "Restaurant Le Pacha a Draveil : kebab, pizza, assiette turque, burgers et fast food sur le boulevard Henri Barbusse."
       },
-      jsonLdName: "Menu Le Pacha",
+      jsonLdName: "Menu officiel Le Pacha",
       categoriesAria: "Categories du menu"
     },
     benefits: {
       eyebrow: "Pourquoi venir",
-      title: "Chaud, rapide, bien servi.",
+      title: "Turc, genereux, rapide.",
       items: [
         {
-          label: "Grill",
-          title: "Viande grillee",
-          text: "Des saveurs chaudes, simples et franches."
+          label: "Cuisine",
+          title: "Specialites turques",
+          text: "Entrees, assiettes et sandwichs dans un esprit simple et bien servi."
+        },
+        {
+          label: "Cuisson",
+          title: "Grill et four",
+          text: "Viandes chaudes, pains garnis et pizzas cuites dans le rythme du service."
         },
         {
           label: "Service",
-          title: "Commande rapide",
-          text: "Appel, livraison ou passage sur place."
+          title: "Rapide a commander",
+          text: "Sur place, par telephone ou en livraison."
         },
         {
-          label: "Portions",
-          title: "Bien garni",
-          text: "Sandwichs et assiettes faits pour caler."
-        },
-        {
-          label: "Disponibilite",
-          title: "Ouvert jusqu'au soir",
-          text: "Une adresse pratique apres le travail."
+          label: "Horaires",
+          title: "Du dejeuner au soir",
+          text: "Ouvert du lundi au samedi de 11h a 22h."
         }
       ]
     },
     info: {
       eyebrow: "Infos pratiques",
-      title: "Le Pacha, a Draveil.",
+      title: "Restaurant Le Pacha, a Draveil.",
       findUs: "Adresse",
       addressLine: "91210 Draveil, France",
       items: [
         {
           label: "Telephone",
           title: "+33 1 69 42 69 34",
-          text: "Appelle pour commander ou verifier les horaires."
+          text: "Appelle pour commander ou verifier l'ouverture."
         },
         {
           label: "Service",
           title: "Sur place, a emporter, livraison",
-          text: "Commande directe ou Uber Eats."
+          text: "Carte complete au restaurant, commande rapide par Uber Eats ou par telephone."
         },
         {
           label: "Horaires",
-          title: "Lun-dim : 11:00 - 22:00",
-          text: "Les horaires peuvent changer les jours feries."
+          title: "Lun-sam : 11:00 - 22:00",
+          text: "Horaires releves sur le menu du restaurant."
         }
       ]
     },
     finalCta: {
       eyebrow: "A table",
-      title: "Une faim ? Commande.",
-      text: "Kebab, tacos, burgers et grillades halal a Draveil.",
-      hoursLabel: "Horaires indicatifs"
+      title: "Une faim ? Passe au restaurant ou commande.",
+      text: "Kebab, pizzas, burgers et specialites turques a Draveil.",
+      hoursLabel: "Horaires"
     }
   },
   tr: {
@@ -233,96 +241,102 @@ export const content = {
       info: "Bilgi",
       call: "Ara",
       order: "Siparis",
-      stickyOrder: "Uber",
+      stickyOrder: "Siparis",
       lang: "FR"
     },
     hero: {
-      eyebrow: "Draveil'de helal kebap",
-      title: ["Le", "Pacha", "2"],
-      tagline: "Sicak izgara. Bol porsiyon.",
-      text: "Helal kebap, tabaklar, tacos ve burgerler. Yerinde, paket veya teslimat.",
-      primary: "Uber Eats'ten siparis",
+      eyebrow: "Draveil'de Turk restorani",
+      title: ["Le", "Pacha"],
+      tagline: "Izgara, kebap, pizza. Hizli servis.",
+      text: "Turk tabaklari, sandvicler, burgerler, pizzalar ve tatlilar. Yerinde, paket veya teslimat.",
+      primary: "Siparis",
       secondary: "Ara",
       menuCta: "Menuyu gor",
-      menuShortCta: "Menu",
-      quickMenuLabel: "Hizli menu",
-      quickMenuItems: ["Kebap", "Tabak", "Tacos", "Burger"],
-      productLabel: "Izgara, sos, citir",
-      productTitle: "Acikinca hazir.",
+      menuShortCta: "Menuyu gor",
+      quickMenuLabel: "Menu",
+      quickMenuItems: ["Tabaklar", "Sandvicler", "Pizzalar", "Tatlilar"],
+      productLabel: "Turk spesiyalleri",
+      productTitle: "Izgara, firin, iyi servis.",
       ratingLabel: "Uber Eats puani",
       ratingText: "yerel yorum",
-      serviceLabel: "Yerinde / teslimat",
-      deliveryLabel: "Teslimat 11:00 - 22:00",
+      serviceLabel: "Pzt-cmt, 11:00 - 22:00",
+      deliveryLabel: "Pzt-cmt, 11:00 - 22:00",
       addressShort: "154 Boulevard Henri Barbusse"
     },
-    ticker: ["Draveil kebap", "Draveil helal restoran", "Draveil tacos", "Draveil fast food", "helal izgara"],
+    ticker: [
+      "Draveil Turk restorani",
+      "Draveil kebap",
+      "Draveil pizza",
+      "Draveil helal restoran",
+      "Draveil fast food"
+    ],
     proof: {
       eyebrow: "Musteri yorumlari",
-      title: "Basit, hizli, duzenli.",
+      title: "Draveil'de bilinen bir adres.",
       ratingLabel: "yorum"
     },
     reviews: [
       {
-        title: "Hizli ve lezzetli",
-        text: "Siparis hizli, yemek sicak."
+        title: "Her zaman duzenli",
+        text: "Hizli servis ve doyurucu tabaklar."
       },
       {
-        title: "Bol porsiyon",
-        text: "Sandvicler dolu, tabaklar doyurucu."
+        title: "Lezzetli ve bol",
+        text: "Kebap, pizza ya da burger, tok cikilir."
       },
       {
-        title: "Her zaman pratik",
-        text: "Draveil'de helal yemek icin iyi adres."
+        title: "Aksam icin pratik",
+        text: "Draveil'de yemek icin kolay bir adres."
       }
     ],
     menu: {
       eyebrow: "Menu",
-      title: "Canin ne istiyor?",
-      text: "Kebap, izgara tabak, tacos, burger, patates ve icecek.",
-      fullCta: "Tum menuyu gor",
-      spotlight: "Izgara, sos, patates. Direkt.",
+      title: "Izgaradan firina.",
+      text: "Turk mezeleri, tabaklar, sandvicler, burgerler, pizzalar, tatlilar ve icecekler.",
+      fullCta: "Resmi menuyu gor",
+      spotlight: "Etler, sicak ekmekler, pizzalar, tatlilar.",
       categories: [
         {
-          title: "Kebap / Sandvic",
-          kicker: "Klasik",
-          description: "Izgara et, sicak ekmek, sos ve patates.",
-          image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=80",
-          alt: "Izgara etli kebap sandvic"
-        },
-        {
-          title: "Izgara tabaklar",
-          kicker: "Doyurucu",
-          description: "Tavuk, merguez, karisik izgara, patates ve yan urunler.",
+          title: "Turk tabaklari",
+          kicker: "Spesiyal",
+          description: "Kebap, kofte, adana, merguez, steak ve karisik izgara.",
           image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=900&q=80",
-          alt: "Izgara et tabagi"
+          alt: "Izgara tabak"
         },
         {
-          title: "Tacos / Burger",
-          kicker: "Gurme",
-          description: "Buyuk aclik icin sicak ve bol secenekler.",
+          title: "Sandvicler",
+          kicker: "Hizli",
+          description: "Kebap, chicken, adana, cordon bleu ve sisler patatesle servis edilir.",
+          image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=80",
+          alt: "Sicak kebap sandvic"
+        },
+        {
+          title: "Burger ve tacos",
+          kicker: "Doyurucu",
+          description: "Cheeseburger, maxi burger, chicken burger, wings, nuggets ve tacos.",
+          image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80",
+          alt: "Sicak burger"
+        },
+        {
+          title: "Pizzalar",
+          kicker: "Firindan",
+          description: "Domates soslu veya krema bazli, junior'dan mega'ya.",
           image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=900&q=80",
-          alt: "Sicak tacos"
-        },
-        {
-          title: "Yan urun / Icecek",
-          kicker: "Ekstra",
-          description: "Patates, wings, nuggets ve soguk icecekler.",
-          image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=80",
-          alt: "Citir patates"
+          alt: "Firindan cikan pizza"
         }
       ]
     },
     menuPage: {
       seo: {
-        title: "Le Pacha tam menu | Draveil helal kebap ve tacos",
+        title: "Le Pacha resmi menu | Draveil izgara, pizza ve kebap",
         description:
-          "Le Pacha Draveil tam menu: kebap, sandvic, tabak, tacos, burger, tex-mex, tatli ve icecek.",
+          "Le Pacha Draveil resmi menu: Turk mezeleri, tabaklar, sandvicler, burgerler, tacos, pizzalar, tatlilar ve icecekler.",
         keywords: [
           "Le Pacha menu",
+          "Draveil pizza",
           "Draveil kebap menu",
-          "Draveil helal restoran menu",
-          "Draveil tacos",
-          "Draveil fast food"
+          "Draveil Turk restoran",
+          "Draveil helal restoran menu"
         ]
       },
       header: {
@@ -331,90 +345,91 @@ export const content = {
         info: "Bilgi"
       },
       hero: {
-        eyebrow: "Le Pacha menu - Draveil",
+        eyebrow: "Resmi menu - Draveil",
+        kicker: "Turk spesiyalleri",
         title: "Menu",
-        outline: "tam",
-        tagline: "Menunu sec. Gerisini biz hallederiz.",
-        text: "Grec sandvic, karisik tabak, 2 etli tacos, wings veya burger: sicak, bol ve helal.",
-        boardEyebrow: "Klasikler hazir.",
-        boardText: "Sicak ekmek, izgara et, patates ve soslar. Basit, hizli, bol.",
-        addressKicker: "Yerinde, paket, teslimat",
-        addressTitle: "Draveil helal kebap",
+        outline: "resmi",
+        tagline: "Restoranin menusu, yerinde okunup yazildi.",
+        text: "Turk mezeleri, tabaklar, sandvicler, burgerler, pizzalar, tatlilar ve icecekler. Fiyatlar restorandaki basili menuye gore girildi.",
+        boardEyebrow: "Le Pacha",
+        boardText: "Izgara, firin ve iyi porsiyonlar. Tum menu burada, gercek boyutlari ve gercek formulleriyle.",
+        addressKicker: "154 Boulevard Henri Barbusse",
+        addressTitle: "Pzt-cmt, 11:00 - 22:00",
         stats: [
-          { number: "8", label: "kategori" },
-          { number: "40", label: "urun" },
+          { number: "14", label: "kategori" },
+          { number: "86", label: "urun" },
           { number: "11-22", label: "saat" }
         ]
       },
       intro: {
-        eyebrow: "Tam menu",
-        title: "Canin ne istiyorsa sec. Hemen siparis ver.",
+        eyebrow: "Yerinde yazilan menu",
+        title: "Tezgahtan firina, hepsi burada.",
         note:
-          "Uber Eats fiyatlari bilgilendirme amaclidir. Gunluk teklif icin restorana sor."
+          "Fiyatlar 10 Nisan 2026'da restoranin basili menusunden alindi. Bazilarinda boy veya formule secenekleri vardir."
       },
       finalCta: {
-        eyebrow: "Ne yiyecegini biliyor musun?",
-        title: "Aciktiysan siparis ver.",
+        eyebrow: "Siparis verecek misin?",
+        title: "Sec, ara ya da Uber Eats'ten siparis ver.",
         text:
-          "Le Pacha, Draveil helal kebap, tacos ve fast food adresi: 154 Boulevard Henri Barbusse."
+          "Draveil'deki Le Pacha: kebap, pizza, Turk tabagi, burger ve boulevard Henri Barbusse uzerinde fast food."
       },
-      jsonLdName: "Le Pacha Menu",
+      jsonLdName: "Le Pacha resmi menu",
       categoriesAria: "Menu kategorileri"
     },
     benefits: {
-      eyebrow: "Neden Le Pacha",
-      title: "Sicak, hizli, bol.",
+      eyebrow: "Neden gelinir",
+      title: "Turk, bol, hizli.",
       items: [
         {
-          label: "Izgara",
-          title: "Izgara et",
-          text: "Sicak, sade ve net lezzet."
+          label: "Mutfak",
+          title: "Turk spesiyalleri",
+          text: "Mezeler, tabaklar ve sandvicler sade ama doyurucu bir cizgide."
+        },
+        {
+          label: "Pisme",
+          title: "Izgara ve firin",
+          text: "Sicak etler, dolu ekmekler ve servisin temposunda pizzalar."
         },
         {
           label: "Servis",
-          title: "Hizli siparis",
-          text: "Telefon, teslimat veya yerinde."
+          title: "Siparis kolay",
+          text: "Yerinde, telefonla ya da teslimatla."
         },
         {
-          label: "Porsiyon",
-          title: "Bol servis",
-          text: "Sandvic ve tabaklar doyurur."
-        },
-        {
-          label: "Aksam",
-          title: "Aksam icin iyi",
-          text: "Isten sonra pratik bir adres."
+          label: "Saat",
+          title: "Ogleden aksama",
+          text: "Pazartesiden cumartesiye 11:00 - 22:00 acik."
         }
       ]
     },
     info: {
       eyebrow: "Pratik bilgiler",
-      title: "Le Pacha, Draveil.",
-      findUs: "Adress",
+      title: "Restaurant Le Pacha, Draveil.",
+      findUs: "Adres",
       addressLine: "91210 Draveil, Fransa",
       items: [
         {
           label: "Telefon",
           title: "+33 1 69 42 69 34",
-          text: "Siparis vermek veya saatleri sormak icin ara."
+          text: "Siparis vermek veya acilis saatini sormak icin ara."
         },
         {
           label: "Servis",
           title: "Yerinde, paket, teslimat",
-          text: "Direkt siparis veya Uber Eats."
+          text: "Restoranda tum menu, Uber Eats veya telefonla hizli siparis."
         },
         {
           label: "Saatler",
-          title: "Pzt-paz: 11:00 - 22:00",
-          text: "Tatil gunlerinde saatler degisebilir."
+          title: "Pzt-cmt: 11:00 - 22:00",
+          text: "Saatler restoran menusunden alinmistir."
         }
       ]
     },
     finalCta: {
       eyebrow: "Yemek vakti",
-      title: "Ac misin? Siparis ver.",
-      text: "Draveil'de helal kebap, tacos, burger ve izgara.",
-      hoursLabel: "Tahmini saatler"
+      title: "Aciktin mi? Restorana gel ya da siparis ver.",
+      text: "Draveil'de kebap, pizza, burger ve Turk spesiyalleri.",
+      hoursLabel: "Saatler"
     }
   }
 } satisfies Record<Locale, unknown>;

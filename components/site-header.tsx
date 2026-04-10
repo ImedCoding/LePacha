@@ -31,13 +31,15 @@ export function SiteHeader({
   ];
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-ember/25 bg-charcoal/88 backdrop-blur">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-[#d4c49a]/18 bg-[linear-gradient(180deg,rgba(9,9,9,0.94),rgba(11,13,10,0.88))] backdrop-blur">
       <div className="mx-auto flex h-[4.5rem] max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
         <Link href="/" className="group flex items-center gap-3 font-black uppercase text-ash">
-          <span className="relative grid h-12 w-12 place-items-center overflow-hidden border border-ember bg-charcoal shadow-ember transition group-hover:border-[#ff8126]">
-            <Image src="/logo.png" alt="Le Pacha 2" fill sizes="48px" className="object-contain p-1" priority />
+          <span className="relative grid h-12 w-12 place-items-center overflow-hidden border border-[#d4c49a] bg-charcoal shadow-ember transition group-hover:border-flame">
+            <Image src="/logo.png" alt="Le Pacha" fill sizes="48px" className="object-contain p-1" priority />
           </span>
-          <span className="hidden sm:inline">{restaurant.name}</span>
+          <span className="hidden display-type text-3xl font-bold normal-case sm:inline">
+            {restaurant.name}
+          </span>
         </Link>
 
         <nav aria-label="Main navigation" className="hidden items-center gap-7 md:flex">

@@ -15,22 +15,22 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Restaurant",
     name: restaurant.name,
-    servesCuisine: ["Turkish", "Halal", "Fast food"],
+    servesCuisine: ["Turkish", "Halal", "Fast food", "Pizza"],
     address: {
       "@type": "PostalAddress",
       streetAddress: "154 Boulevard Henri Barbusse",
       postalCode: "91210",
       addressLocality: "Draveil",
-      addressCountry: "FR",
+      addressCountry: "FR"
     },
     telephone: restaurant.phone.display,
     priceRange: "EUR",
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: restaurant.rating.value,
-      reviewCount: restaurant.rating.count,
+      reviewCount: restaurant.rating.count
     },
-    url: restaurant.links.uberEats,
+    url: restaurant.links.uberEats
   };
 
   return (
@@ -54,7 +54,7 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(localBusinessJsonLd),
+          __html: JSON.stringify(localBusinessJsonLd)
         }}
       />
     </>
@@ -63,7 +63,7 @@ export default function Home() {
 
 function Hero({
   t,
-  ticker,
+  ticker
 }: {
   t: (typeof content.fr)["hero"];
   ticker: string[];
@@ -75,34 +75,34 @@ function Hero({
     >
       <Image
         src={restaurant.images.hero}
-        alt="Viande grillee pour kebab et sandwich"
+        alt="Viande grillee Le Pacha"
         fill
         priority
         sizes="100vw"
-        className="hidden object-cover opacity-[0.48] saturate-150 lg:block"
+        className="hidden object-cover opacity-[0.46] saturate-125 lg:block"
       />
       <Image
         src={restaurant.images.heroMobile}
-        alt="Grillades chaudes avec frites"
+        alt="Grillades chaudes Le Pacha"
         fill
         priority
         sizes="100vw"
-        className="object-cover object-[48%_36%] opacity-[0.72] saturate-150 lg:hidden"
+        className="object-cover object-[48%_36%] opacity-[0.62] saturate-125 lg:hidden"
       />
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(13,13,13,0.68)_0%,rgba(13,13,13,0.76)_43%,rgba(13,13,13,0.96)_100%)] lg:bg-[linear-gradient(115deg,rgba(13,13,13,0.98)_0%,rgba(13,13,13,0.86)_42%,rgba(13,13,13,0.3)_100%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_82%_45%,rgba(255,106,0,0.22),transparent_18rem),radial-gradient(circle_at_18%_16%,rgba(166,27,27,0.22),transparent_16rem)] lg:bg-[radial-gradient(circle_at_76%_42%,rgba(255,106,0,0.56),transparent_25rem),radial-gradient(circle_at_12%_12%,rgba(166,27,27,0.35),transparent_20rem)]" />
-      <div className="absolute inset-x-0 bottom-0 h-56 bg-[radial-gradient(ellipse_at_center,rgba(255,106,0,0.28),transparent_68%)] lg:hidden" />
-      <div className="absolute inset-0 fire-noise opacity-20 lg:opacity-35" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(9,9,9,0.68)_0%,rgba(9,9,9,0.8)_43%,rgba(9,9,9,0.96)_100%)] lg:bg-[linear-gradient(115deg,rgba(9,9,9,0.98)_0%,rgba(9,9,9,0.86)_42%,rgba(9,9,9,0.26)_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_82%_44%,rgba(212,196,154,0.18),transparent_18rem),radial-gradient(circle_at_18%_16%,rgba(81,102,63,0.26),transparent_18rem),radial-gradient(circle_at_90%_100%,rgba(74,46,34,0.2),transparent_16rem)] lg:bg-[radial-gradient(circle_at_76%_42%,rgba(212,196,154,0.22),transparent_24rem),radial-gradient(circle_at_12%_12%,rgba(81,102,63,0.34),transparent_22rem)]" />
+      <div className="absolute inset-x-0 bottom-0 h-56 bg-[radial-gradient(ellipse_at_center,rgba(81,102,63,0.24),transparent_68%)] lg:hidden" />
+      <div className="absolute inset-0 fire-noise opacity-12 lg:opacity-22" />
       <div className="hidden lg:block">
         <div className="heat-haze" />
       </div>
 
       <div className="relative z-10 mx-auto grid min-h-[calc(100svh-5rem)] w-full max-w-7xl gap-10 px-5 pb-10 pt-10 sm:px-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:px-8">
         <div className="relative">
-          <div className="mb-6 inline-flex border border-ember bg-charcoal px-4 py-2 text-xs font-black uppercase text-ember shadow-ember">
+          <div className="mb-6 inline-flex border border-[#d4c49a]/55 bg-charcoal px-4 py-2 text-xs font-black uppercase text-[#d4c49a] shadow-ember">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-1 lg:hidden">
-                <span className="text-xs font-black leading-none text-ember">
+                <span className="text-xs font-black leading-none text-[#d4c49a]">
                   {restaurant.rating.value}
                 </span>
                 <GoldStar className="h-5 w-5" />
@@ -110,26 +110,29 @@ function Hero({
               {t.eyebrow}
             </div>
           </div>
-          <p className="brand-outline absolute -left-2 top-11 hidden text-[7rem] font-black uppercase leading-none text-transparent opacity-45 sm:block lg:text-[10rem]">
+          <p className="script-type text-3xl leading-none text-[#d4c49a] sm:text-4xl">
+            {t.productLabel}
+          </p>
+          <p className="brand-outline absolute -left-2 top-14 hidden display-type text-[7rem] font-bold uppercase leading-none text-transparent opacity-45 sm:block lg:text-[10rem]">
             Pacha
           </p>
-          <h1 className="relative max-w-3xl text-6xl font-black uppercase leading-[0.82] text-ash text-shadow-fire sm:text-7xl lg:text-[8.5rem]">
+          <h1 className="relative display-type max-w-3xl text-6xl font-bold uppercase leading-[0.82] text-ash text-shadow-fire sm:text-7xl lg:text-[8.1rem]">
             {t.title.map((line) => (
               <span key={line} className="block">
                 {line}
               </span>
             ))}
           </h1>
-          <p className="mt-7 max-w-[18rem] border-l-4 border-ember pl-5 text-2xl font-black leading-tight text-ash sm:max-w-xl sm:text-3xl">
+          <p className="mt-7 max-w-[19rem] border-l-4 border-[#d4c49a] pl-5 text-2xl font-black leading-tight text-ash sm:max-w-xl sm:text-3xl">
             {t.tagline}
           </p>
-          <p className="mt-5 max-w-[20rem] text-base leading-7 text-ash/76 sm:max-w-xl sm:text-lg">
+          <p className="mt-5 max-w-[22rem] text-base leading-7 text-ash/76 sm:max-w-xl sm:text-lg">
             {t.text}
           </p>
 
           <div className="mt-6 grid gap-3 lg:hidden">
-            <div className="grid gap-1 border-l-4 border-ember bg-charcoal/74 p-4 shadow-card backdrop-blur">
-              <p className="text-xs font-black uppercase text-ember">
+            <div className="grid gap-1 border-l-4 border-[#d4c49a] bg-charcoal/74 p-4 shadow-card backdrop-blur">
+              <p className="text-xs font-black uppercase text-[#d4c49a]">
                 {t.deliveryLabel}
               </p>
               <p className="text-base font-black leading-tight text-ash">
@@ -189,32 +192,32 @@ function Hero({
         </div>
 
         <div className="relative hidden min-h-[42rem] lg:block">
-          <div className="absolute -right-8 top-0 hidden h-36 w-36 border border-ember/45 lg:block" />
-          <div className="food-stage absolute inset-x-0 top-0 h-[20rem] overflow-hidden border border-ember/55 bg-coal shadow-[0_32px_90px_rgba(255,106,0,0.24)] sm:top-4 sm:h-[34rem] lg:inset-y-8 lg:left-4 lg:right-0 lg:h-auto">
+          <div className="absolute -right-8 top-0 hidden h-36 w-36 border border-[#d4c49a]/28 lg:block" />
+          <div className="food-stage absolute inset-x-0 top-0 h-[20rem] overflow-hidden border border-[#d4c49a]/35 bg-coal shadow-[0_32px_90px_rgba(81,102,63,0.16)] sm:top-4 sm:h-[34rem] lg:inset-y-8 lg:left-4 lg:right-0 lg:h-auto">
             <Image
               src={restaurant.images.heroProduct}
-              alt="Burger halal sous une lumiere chaude"
+              alt="Assiette de grillades Le Pacha"
               fill
               sizes="(min-width: 1024px) 48vw, 100vw"
-              className="object-cover object-[58%_45%] saturate-150 transition duration-500 hover:scale-105 sm:object-center"
+              className="object-cover object-[58%_45%] saturate-125 transition duration-500 hover:scale-105 sm:object-center"
             />
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(13,13,13,0.04),rgba(13,13,13,0.24)_50%,rgba(13,13,13,0.72))]" />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(9,9,9,0.04),rgba(9,9,9,0.24)_50%,rgba(9,9,9,0.76))]" />
             <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-7">
-              <p className="inline-flex bg-ember px-4 py-2 text-sm font-black uppercase text-charcoal shadow-ember">
+              <p className="inline-flex bg-[#d4c49a] px-4 py-2 text-sm font-black uppercase text-charcoal shadow-ember">
                 {t.productLabel}
               </p>
-              <p className="mt-4 max-w-md text-3xl font-black leading-none text-ash sm:text-4xl">
+              <p className="mt-4 display-type max-w-md text-3xl font-bold leading-none text-ash sm:text-4xl">
                 {t.productTitle}
               </p>
             </div>
           </div>
 
           <div className="brand-stamp absolute left-0 top-0 z-10 border border-white/14 bg-charcoal/92 p-5 shadow-card backdrop-blur sm:left-6">
-            <p className="flex items-center gap-2 text-5xl font-black leading-none text-ember">
+            <p className="flex items-center gap-2 text-5xl font-black leading-none text-ash">
               {restaurant.rating.value}
               <GoldStar className="h-8 w-8" />
             </p>
-            <p className="mt-1 text-xs font-black uppercase text-ash/70">
+            <p className="mt-1 text-xs font-black uppercase text-ash">
               {t.ratingLabel}
             </p>
             <p className="mt-3 text-sm font-bold text-ash">
@@ -222,7 +225,7 @@ function Hero({
             </p>
           </div>
 
-          <div className="absolute -bottom-10 right-3 z-10 max-w-[17rem] border border-ember/50 bg-flame px-5 py-4 shadow-ember">
+          <div className="absolute -bottom-10 right-3 z-10 max-w-[17rem] border border-[#d4c49a]/35 bg-wine px-5 py-4 shadow-ember">
             <p className="text-xs font-black uppercase text-ash/72">
               {t.serviceLabel}
             </p>
@@ -240,7 +243,7 @@ function Hero({
 
 function BrandTicker({ words }: { words: string[] }) {
   return (
-    <div className="relative z-20 border-y border-ember/55 bg-ember text-charcoal">
+    <div className="relative z-20 border-y border-[#d4c49a]/35 bg-flame text-ash">
       <div className="brand-marquee flex min-h-14 items-center gap-8 whitespace-nowrap text-sm font-black uppercase">
         {[...words, ...words, ...words].map((word, index) => (
           <span
@@ -248,7 +251,7 @@ function BrandTicker({ words }: { words: string[] }) {
             className="inline-flex items-center gap-8"
           >
             {word}
-            <span className="h-2 w-10 bg-charcoal" />
+            <span className="h-2 w-10 bg-[#d4c49a]" />
           </span>
         ))}
       </div>
@@ -277,7 +280,7 @@ function GoldStar({ className }: { className: string }) {
 
 function ProofStrip({
   t,
-  reviews,
+  reviews
 }: {
   t: (typeof content.fr)["proof"];
   reviews: (typeof content.fr)["reviews"];
@@ -287,23 +290,25 @@ function ProofStrip({
       id="reviews"
       className="relative bg-charcoal px-5 py-16 sm:px-6 lg:px-8"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_14%_8%,rgba(255,106,0,0.18),transparent_22rem)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_14%_8%,rgba(81,102,63,0.18),transparent_22rem)]" />
       <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
         <div>
-          <p className="text-xs font-black uppercase text-ember">{t.eyebrow}</p>
-          <h2 className="mt-3 max-w-xl text-4xl font-black uppercase leading-none text-ash sm:text-5xl">
+          <p className="script-type text-3xl leading-none text-[#d4c49a]">
+            {t.eyebrow}
+          </p>
+          <h2 className="display-type mt-3 max-w-xl text-4xl font-bold uppercase leading-none text-ash sm:text-5xl">
             {t.title}
           </h2>
         </div>
 
         <div className="proof-ticket border-y border-white/14 py-5">
           <div className="grid gap-5 md:grid-cols-[12rem_1fr] md:items-center">
-            <div className="border-l-8 border-ember pl-5">
+            <div className="border-l-8 border-[#d4c49a] pl-5">
               <p className="flex items-center gap-3 text-7xl font-black leading-none text-ash">
                 {restaurant.rating.value}
                 <GoldStar className="h-10 w-10" />
               </p>
-              <p className="mt-2 text-sm font-black uppercase text-ember">
+              <p className="mt-2 text-sm font-black uppercase text-[#d4c49a]">
                 {restaurant.rating.count}+ {t.ratingLabel}
               </p>
             </div>
@@ -331,16 +336,17 @@ function MenuHighlights({ t }: { t: (typeof content.fr)["menu"] }) {
   return (
     <section
       id="menu"
-      className="relative bg-[#101010] px-5 py-20 sm:px-6 lg:px-8"
+      className="relative bg-[linear-gradient(180deg,#0c0d0b_0%,#131812_22%,#090909_100%)] px-5 py-20 sm:px-6 lg:px-8"
     >
-      <div className="absolute inset-0 fire-noise opacity-20" />
+      <div className="absolute inset-0 fire-noise opacity-10" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_88%_10%,rgba(212,196,154,0.12),transparent_24rem),radial-gradient(circle_at_0%_60%,rgba(81,102,63,0.16),transparent_24rem)]" />
       <div className="relative mx-auto max-w-7xl">
         <div className="grid gap-8 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
           <div className="lg:sticky lg:top-28">
-            <p className="text-xs font-black uppercase text-ember">
+            <p className="script-type text-3xl leading-none text-[#d4c49a]">
               {t.eyebrow}
             </p>
-            <h2 className="mt-3 text-4xl font-black uppercase leading-none text-ash sm:text-5xl">
+            <h2 className="display-type mt-3 text-4xl font-bold uppercase leading-none text-ash sm:text-5xl">
               {t.title}
             </h2>
             <p className="mt-5 max-w-lg text-base leading-7 text-ash/72">
@@ -353,16 +359,16 @@ function MenuHighlights({ t }: { t: (typeof content.fr)["menu"] }) {
             >
               {t.fullCta}
             </ButtonLink>
-            <div className="menu-spotlight relative mt-8 h-[28rem] overflow-hidden border border-ember/45 bg-coal shadow-ember">
+            <div className="menu-spotlight relative mt-8 h-[28rem] overflow-hidden border border-[#d4c49a]/35 bg-coal shadow-ember">
               <Image
                 src={restaurant.images.menuSpotlight}
-                alt="Grillades avec frites et sauce"
+                alt="Sandwich Le Pacha"
                 fill
                 sizes="(min-width: 1024px) 40vw, 100vw"
-                className="object-cover saturate-150"
+                className="object-cover saturate-125"
               />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(13,13,13,0.0),rgba(13,13,13,0.78))]" />
-              <p className="absolute bottom-5 left-5 right-5 text-3xl font-black uppercase leading-none text-ash">
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(9,9,9,0.04),rgba(9,9,9,0.82))]" />
+              <p className="absolute bottom-5 left-5 right-5 display-type text-3xl font-bold uppercase leading-none text-ash">
                 {t.spotlight}
               </p>
             </div>
@@ -380,19 +386,19 @@ function MenuHighlights({ t }: { t: (typeof content.fr)["menu"] }) {
                     alt={category.alt}
                     fill
                     sizes="(min-width: 1024px) 160px, (min-width: 640px) 128px, 100vw"
-                    className="object-cover saturate-150 transition duration-500 group-hover:scale-110"
+                    className="object-cover saturate-125 transition duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/50 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/55 to-transparent" />
                 </div>
                 <div className="grid gap-4 sm:grid-cols-[4rem_1fr] sm:items-start">
-                  <p className="text-5xl font-black leading-none text-transparent brand-outline">
+                  <p className="display-type text-5xl font-bold leading-none text-transparent brand-outline">
                     {String(index + 1).padStart(2, "0")}
                   </p>
                   <div>
-                    <p className="text-xs font-black uppercase text-ember">
+                    <p className="text-xs font-black uppercase text-[#d4c49a]">
                       {category.kicker}
                     </p>
-                    <h3 className="mt-2 text-3xl font-black uppercase leading-none text-ash transition group-hover:text-ember">
+                    <h3 className="display-type mt-2 text-3xl font-bold uppercase leading-none text-ash transition group-hover:text-[#d4c49a]">
                       {category.title}
                     </h3>
                     <p className="mt-3 max-w-xl text-sm leading-6 text-ash/70">
@@ -417,19 +423,19 @@ function WhyChooseUs({ t }: { t: (typeof content.fr)["benefits"] }) {
     >
       <Image
         src={restaurant.images.flameWall}
-        alt="Flammes de grill"
+        alt="Pizza chaude"
         fill
         sizes="100vw"
-        className="object-cover opacity-28 saturate-150"
+        className="object-cover opacity-18 saturate-125"
       />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(13,13,13,0.98),rgba(13,13,13,0.78),rgba(13,13,13,0.94))]" />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(9,9,9,0.98),rgba(9,9,9,0.78),rgba(9,9,9,0.94))]" />
       <div className="relative mx-auto max-w-7xl">
         <div className="grid gap-8 lg:grid-cols-[0.7fr_1.3fr]">
           <div>
-            <p className="text-xs font-black uppercase text-ember">
+            <p className="script-type text-3xl leading-none text-[#d4c49a]">
               {t.eyebrow}
             </p>
-            <h2 className="mt-3 text-4xl font-black uppercase leading-none text-ash sm:text-5xl">
+            <h2 className="display-type mt-3 text-4xl font-bold uppercase leading-none text-ash sm:text-5xl">
               {t.title}
             </h2>
           </div>
@@ -439,14 +445,14 @@ function WhyChooseUs({ t }: { t: (typeof content.fr)["benefits"] }) {
                 key={benefit.title}
                 className="group grid gap-4 border-t border-white/14 py-6 sm:grid-cols-[4rem_1fr]"
               >
-                <p className="text-3xl font-black text-ember">
+                <p className="display-type text-4xl font-bold leading-none text-[#d4c49a]">
                   {String(index + 1).padStart(2, "0")}
                 </p>
                 <div>
                   <p className="text-xs font-black uppercase text-ash/50">
                     {benefit.label}
                   </p>
-                  <h3 className="mt-2 text-2xl font-black uppercase text-ash transition group-hover:text-ember">
+                  <h3 className="display-type mt-2 text-2xl font-bold uppercase text-ash transition group-hover:text-[#d4c49a]">
                     {benefit.title}
                   </h3>
                   <p className="mt-2 max-w-2xl text-sm leading-6 text-ash/70">
@@ -464,7 +470,7 @@ function WhyChooseUs({ t }: { t: (typeof content.fr)["benefits"] }) {
 
 function PracticalInfo({
   t,
-  nav,
+  nav
 }: {
   t: (typeof content.fr)["info"];
   nav: (typeof content.fr)["nav"];
@@ -472,34 +478,34 @@ function PracticalInfo({
   return (
     <section
       id="info"
-      className="relative bg-[#111] px-5 py-20 sm:px-6 lg:px-8"
+      className="relative bg-[linear-gradient(180deg,#0a0b09_0%,#131611_100%)] px-5 py-20 sm:px-6 lg:px-8"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(255,106,0,0.18),transparent_23rem)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(81,102,63,0.18),transparent_23rem),radial-gradient(circle_at_88%_80%,rgba(74,46,34,0.24),transparent_24rem)]" />
       <div className="relative mx-auto max-w-7xl">
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-stretch">
-          <div className="street-panel relative min-h-[32rem] overflow-hidden border border-ember/45 bg-charcoal p-6 shadow-ember sm:p-8">
+          <div className="street-panel relative min-h-[32rem] overflow-hidden border border-[#d4c49a]/35 bg-charcoal p-6 shadow-ember sm:p-8">
             <Image
               src={restaurant.images.streetFood}
-              alt="Comptoir de restaurant avec lumiere chaude"
+              alt="Salle du restaurant"
               fill
               sizes="(min-width: 1024px) 54vw, 100vw"
-              className="object-cover opacity-[0.42] saturate-150"
+              className="object-cover opacity-[0.36] saturate-125"
             />
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(13,13,13,0.95),rgba(13,13,13,0.78),rgba(13,13,13,0.42))]" />
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(9,9,9,0.95),rgba(9,9,9,0.8),rgba(9,9,9,0.46))]" />
             <div className="relative z-10 flex h-full min-h-[28rem] flex-col justify-between">
               <div>
-                <p className="text-xs font-black uppercase text-ember">
+                <p className="script-type text-3xl leading-none text-[#d4c49a]">
                   {t.eyebrow}
                 </p>
-                <h2 className="mt-3 max-w-2xl text-4xl font-black uppercase leading-none text-ash sm:text-5xl">
+                <h2 className="display-type mt-3 max-w-2xl text-4xl font-bold uppercase leading-none text-ash sm:text-5xl">
                   {t.title}
                 </h2>
               </div>
-              <div className="mt-10 max-w-2xl border-l-8 border-ember bg-charcoal/78 p-5 backdrop-blur">
-                <p className="text-sm font-black uppercase text-ember">
+              <div className="mt-10 max-w-2xl border-l-8 border-[#d4c49a] bg-charcoal/78 p-5 backdrop-blur">
+                <p className="text-sm font-black uppercase text-[#d4c49a]">
                   {t.findUs}
                 </p>
-                <p className="mt-3 text-3xl font-black leading-tight text-ash">
+                <p className="mt-3 display-type text-3xl font-bold leading-tight text-ash">
                   154 Boulevard Henri Barbusse
                 </p>
                 <p className="mt-2 text-lg font-bold text-ash/72">
@@ -515,10 +521,10 @@ function PracticalInfo({
                 key={item.title}
                 className="grid gap-3 border-b border-white/10 pb-6 last:border-b-0 last:pb-0"
               >
-                <p className="text-xs font-black uppercase text-ember">
+                <p className="text-xs font-black uppercase text-[#d4c49a]">
                   {item.label}
                 </p>
-                <h3 className="text-2xl font-black uppercase leading-tight text-ash">
+                <h3 className="display-type text-2xl font-bold uppercase leading-tight text-ash">
                   {item.title}
                 </h3>
                 <p className="text-sm leading-6 text-ash/70">{item.text}</p>
@@ -550,7 +556,7 @@ function PracticalInfo({
 function FinalCta({
   t,
   nav,
-  locale,
+  locale
 }: {
   t: (typeof content.fr)["finalCta"];
   nav: (typeof content.fr)["nav"];
@@ -560,17 +566,19 @@ function FinalCta({
     <section className="relative min-h-[35rem] overflow-hidden bg-charcoal px-5 py-20 sm:px-6 lg:px-8">
       <Image
         src={restaurant.images.finalCta}
-        alt="Burger et frites"
+        alt="Frites Le Pacha"
         fill
         sizes="100vw"
-        className="object-cover opacity-[0.58] saturate-150"
+        className="object-cover opacity-[0.42] saturate-125"
       />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(13,13,13,0.98),rgba(13,13,13,0.58),rgba(13,13,13,0.92))]" />
-      <div className="absolute inset-x-0 top-0 h-2 bg-ember shadow-ember" />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(9,9,9,0.98),rgba(9,9,9,0.58),rgba(9,9,9,0.92))]" />
+      <div className="absolute inset-x-0 top-0 h-px bg-[#d4c49a]" />
       <div className="relative mx-auto flex min-h-[25rem] max-w-7xl items-center">
         <div className="max-w-4xl">
-          <p className="text-xs font-black uppercase text-ember">{t.eyebrow}</p>
-          <h2 className="mt-4 text-5xl font-black uppercase leading-none text-ash text-shadow-fire sm:text-6xl lg:text-[7rem]">
+          <p className="script-type text-3xl leading-none text-[#d4c49a]">
+            {t.eyebrow}
+          </p>
+          <h2 className="display-type mt-4 text-5xl font-bold uppercase leading-none text-ash text-shadow-fire sm:text-6xl lg:text-[6.25rem]">
             {t.title}
           </h2>
           <p className="mt-6 max-w-2xl text-lg font-bold leading-7 text-ash/78">

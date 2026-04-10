@@ -1,23 +1,49 @@
 import type { Metadata } from "next";
+import {
+  Cormorant_Garamond,
+  Inter,
+  Great_Vibes
+} from "next/font/google";
 import "./globals.css";
 import { restaurant } from "@/data/restaurant";
 
+const bodyFont = Inter({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap"
+});
+
+const displayFont = Cormorant_Garamond({
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+  weight: ["600", "700"]
+});
+
+const scriptFont = Great_Vibes({
+  subsets: ["latin"],
+  variable: "--font-script",
+  display: "swap",
+  weight: "400"
+});
+
 export const metadata: Metadata = {
-  title: "Le Pacha 2 | Kebab, tacos et halal a Draveil",
+  title: "Restaurant Le Pacha | Grillades, pizzas et kebabs a Draveil",
   description:
-    "Le Pacha 2 sert kebabs, sandwichs, tacos, burgers et grillades halal a Draveil. Commandez sur Uber Eats ou appelez pour un repas rapide et genereux.",
+    "Restaurant Le Pacha sert grillades, kebabs, sandwichs, burgers, pizzas et specialites turques a Draveil. Commandez sur Uber Eats ou appelez.",
   keywords: [
     "kebab Draveil",
     "halal restaurant Draveil",
     "Turkish restaurant Draveil",
+    "pizza Draveil",
     "tacos Draveil",
     "fast food Draveil",
-    "Le Pacha 2"
+    "Le Pacha"
   ],
   openGraph: {
-    title: "Le Pacha 2 | Kebab halal a Draveil",
+    title: "Restaurant Le Pacha | Draveil",
     description:
-      "Kebabs, assiettes, tacos, burgers et grillades halal a Draveil.",
+      "Grillades, pizzas, kebabs, sandwichs et specialites turques a Draveil.",
     images: [
       {
         url: restaurant.images.hero,
@@ -41,7 +67,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body>{children}</body>
+      <body
+        className={`${bodyFont.variable} ${displayFont.variable} ${scriptFont.variable}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

@@ -10,11 +10,11 @@ type ButtonLinkProps = {
 
 const variants = {
   primary:
-    "border-ember bg-ember text-charcoal shadow-ember hover:bg-[#ff8126] hover:border-[#ff8126]",
+    "border-flame bg-flame text-ash shadow-ember hover:bg-[#647d4b] hover:border-[#647d4b]",
   secondary:
-    "border-white/18 bg-ash/8 text-ash hover:border-ember/70 hover:bg-ember/12",
+    "border-[#d4c49a]/35 bg-transparent text-ash hover:border-ember hover:bg-white/5",
   quiet:
-    "border-white/12 bg-coal/80 text-ash hover:border-ember/60 hover:text-ember"
+    "border-[#d4c49a]/18 bg-coal/80 text-ash hover:border-ember/70 hover:text-ember"
 };
 
 export function ButtonLink({ href, children, variant = "primary", className = "" }: ButtonLinkProps) {
