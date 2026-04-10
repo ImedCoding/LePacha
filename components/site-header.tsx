@@ -4,10 +4,12 @@ import { type Locale, restaurant } from "@/data/restaurant";
 import { ButtonLink } from "./button-link";
 
 type SiteHeaderProps = {
+  activePage?: "home" | "menu";
   locale: Locale;
   nextLocale: Locale;
   onLocaleChange: (locale: Locale) => void;
   t: {
+    home: string;
     reviews: string;
     menu: string;
     info: string;
@@ -17,17 +19,21 @@ type SiteHeaderProps = {
   };
 };
 
-export function SiteHeader({ nextLocale, onLocaleChange, t }: SiteHeaderProps) {
+export function SiteHeader({
+  activePage = "home",
+  nextLocale,
+  onLocaleChange,
+  t
+}: SiteHeaderProps) {
   const navItems = [
-    { href: "#reviews", label: t.reviews },
-    { href: "#menu", label: t.menu },
-    { href: "#info", label: t.info }
+    { key: "home", href: "/", label: t.home },
+    { key: "menu", href: "/menu", label: t.menu }
   ];
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-ember/25 bg-charcoal/88 backdrop-blur">
       <div className="mx-auto flex h-[4.5rem] max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
-        <Link href="#top" className="group flex items-center gap-3 font-black uppercase text-ash">
+        <Link href="/" className="group flex items-center gap-3 font-black uppercase text-ash">
           <span className="relative grid h-12 w-12 place-items-center overflow-hidden border border-ember bg-charcoal shadow-ember transition group-hover:border-[#ff8126]">
             <Image src="/logo.png" alt="Le Pacha 2" fill sizes="48px" className="object-contain p-1" priority />
           </span>
@@ -35,11 +41,22 @@ export function SiteHeader({ nextLocale, onLocaleChange, t }: SiteHeaderProps) {
         </Link>
 
         <nav aria-label="Main navigation" className="hidden items-center gap-7 md:flex">
-          {navItems.map((item) => (
-            <Link key={item.href} href={item.href} className="text-xs font-black uppercase text-ash/70 transition hover:text-ember">
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) => {
+            const isActive = activePage === item.key;
+
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                aria-current={isActive ? "page" : undefined}
+                className={`text-xs font-black uppercase transition hover:text-ember ${
+                  isActive ? "text-ember" : "text-ash/70"
+                }`}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
@@ -70,7 +87,7 @@ export function SiteHeader({ nextLocale, onLocaleChange, t }: SiteHeaderProps) {
             <FlagIcon locale={nextLocale} />
             {t.lang}
           </button>
-          <Link href="#info" className="border border-ember px-3 py-2 text-xs font-black uppercase text-ember">
+          <Link href="/#info" className="border border-ember px-3 py-2 text-xs font-black uppercase text-ember">
             11-22
           </Link>
         </div>

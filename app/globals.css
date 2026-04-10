@@ -62,6 +62,10 @@ body {
   clip-path: polygon(0 0, 100% 0, 92% 100%, 0 92%);
 }
 
+.menu-board-cut {
+  clip-path: polygon(0 0, 100% 2%, 96% 100%, 0 98%);
+}
+
 .brand-button {
   clip-path: polygon(0 0, 100% 0, calc(100% - 0.65rem) 100%, 0 100%);
 }

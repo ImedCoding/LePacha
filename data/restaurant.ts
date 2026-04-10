@@ -1,7 +1,7 @@
 export type Locale = "fr" | "tr";
 
 export const restaurant = {
-  name: "Le Pacha 2",
+  name: "Le Pacha",
   address: "154 Boulevard Henri Barbusse, 91210 Draveil",
   phone: {
     display: "+33 1 69 42 69 34",
@@ -35,6 +35,7 @@ export const restaurant = {
 export const content = {
   fr: {
     nav: {
+      home: "Accueil",
       reviews: "Avis",
       menu: "Menu",
       info: "Infos",
@@ -86,6 +87,7 @@ export const content = {
       eyebrow: "A la carte",
       title: "Choisis ce qui te fait envie.",
       text: "Kebabs, assiettes grillees, tacos, burgers, frites et boissons.",
+      fullCta: "Voir tout le menu",
       spotlight: "Grille, sauce, frites. C'est direct.",
       categories: [
         {
@@ -118,6 +120,55 @@ export const content = {
         }
       ]
     },
+    menuPage: {
+      seo: {
+        title: "Menu complet Le Pacha | Kebab, tacos et halal a Draveil",
+        description:
+          "Menu complet de Le Pacha a Draveil : kebabs, sandwichs, assiettes, tacos, burgers, tex-mex, desserts et boissons.",
+        keywords: [
+          "menu Le Pacha",
+          "kebab Draveil menu",
+          "halal restaurant Draveil menu",
+          "tacos Draveil",
+          "fast food Draveil"
+        ]
+      },
+      header: {
+        home: "Accueil",
+        menu: "Menu",
+        info: "Infos"
+      },
+      hero: {
+        eyebrow: "Menu Le Pacha - Draveil",
+        title: "Menu",
+        outline: "complet",
+        tagline: "Choisis ton menu. On s'occupe du reste.",
+        text: "Sandwich grec, assiette mixte, tacos 2 viandes, wings ou burger : prends ce qui cale, chaud et halal a Draveil.",
+        boardEyebrow: "Les classiques sont prets.",
+        boardText: "Du pain chaud, de la viande grillee, des frites et des sauces. Simple, rapide, bien servi.",
+        addressKicker: "Sur place, a emporter, livraison",
+        addressTitle: "kebab halal Draveil",
+        stats: [
+          { number: "8", label: "familles" },
+          { number: "40", label: "articles" },
+          { number: "11-22", label: "horaires" }
+        ]
+      },
+      intro: {
+        eyebrow: "Menu complet",
+        title: "Repere ton envie. Commande sans hesiter.",
+        note:
+          "Prix indicatifs Uber Eats. Sur place, demande l'offre du moment."
+      },
+      finalCta: {
+        eyebrow: "Une envie precise ?",
+        title: "La faim monte ? Passe commande.",
+        text:
+          "Le Pacha, kebab Draveil, restaurant halal Draveil, tacos Draveil et fast food Draveil au 154 Boulevard Henri Barbusse."
+      },
+      jsonLdName: "Menu Le Pacha",
+      categoriesAria: "Categories du menu"
+    },
     benefits: {
       eyebrow: "Pourquoi venir",
       title: "Chaud, rapide, bien servi.",
@@ -138,15 +189,15 @@ export const content = {
           text: "Sandwichs et assiettes faits pour caler."
         },
         {
-          label: "Soir",
-          title: "Parfait le soir",
+          label: "Disponibilite",
+          title: "Ouvert jusqu'au soir",
           text: "Une adresse pratique apres le travail."
         }
       ]
     },
     info: {
       eyebrow: "Infos pratiques",
-      title: "Le Pacha 2, a Draveil.",
+      title: "Le Pacha, a Draveil.",
       findUs: "Adresse",
       addressLine: "91210 Draveil, France",
       items: [
@@ -176,6 +227,7 @@ export const content = {
   },
   tr: {
     nav: {
+      home: "Ana sayfa",
       reviews: "Yorumlar",
       menu: "Menu",
       info: "Bilgi",
@@ -227,6 +279,7 @@ export const content = {
       eyebrow: "Menu",
       title: "Canin ne istiyor?",
       text: "Kebap, izgara tabak, tacos, burger, patates ve icecek.",
+      fullCta: "Tum menuyu gor",
       spotlight: "Izgara, sos, patates. Direkt.",
       categories: [
         {
@@ -259,8 +312,57 @@ export const content = {
         }
       ]
     },
+    menuPage: {
+      seo: {
+        title: "Le Pacha tam menu | Draveil helal kebap ve tacos",
+        description:
+          "Le Pacha Draveil tam menu: kebap, sandvic, tabak, tacos, burger, tex-mex, tatli ve icecek.",
+        keywords: [
+          "Le Pacha menu",
+          "Draveil kebap menu",
+          "Draveil helal restoran menu",
+          "Draveil tacos",
+          "Draveil fast food"
+        ]
+      },
+      header: {
+        home: "Ana sayfa",
+        menu: "Menu",
+        info: "Bilgi"
+      },
+      hero: {
+        eyebrow: "Le Pacha menu - Draveil",
+        title: "Menu",
+        outline: "tam",
+        tagline: "Menunu sec. Gerisini biz hallederiz.",
+        text: "Grec sandvic, karisik tabak, 2 etli tacos, wings veya burger: sicak, bol ve helal.",
+        boardEyebrow: "Klasikler hazir.",
+        boardText: "Sicak ekmek, izgara et, patates ve soslar. Basit, hizli, bol.",
+        addressKicker: "Yerinde, paket, teslimat",
+        addressTitle: "Draveil helal kebap",
+        stats: [
+          { number: "8", label: "kategori" },
+          { number: "40", label: "urun" },
+          { number: "11-22", label: "saat" }
+        ]
+      },
+      intro: {
+        eyebrow: "Tam menu",
+        title: "Canin ne istiyorsa sec. Hemen siparis ver.",
+        note:
+          "Uber Eats fiyatlari bilgilendirme amaclidir. Gunluk teklif icin restorana sor."
+      },
+      finalCta: {
+        eyebrow: "Ne yiyecegini biliyor musun?",
+        title: "Aciktiysan siparis ver.",
+        text:
+          "Le Pacha, Draveil helal kebap, tacos ve fast food adresi: 154 Boulevard Henri Barbusse."
+      },
+      jsonLdName: "Le Pacha Menu",
+      categoriesAria: "Menu kategorileri"
+    },
     benefits: {
-      eyebrow: "Neden Le Pacha 2",
+      eyebrow: "Neden Le Pacha",
       title: "Sicak, hizli, bol.",
       items: [
         {
@@ -287,8 +389,8 @@ export const content = {
     },
     info: {
       eyebrow: "Pratik bilgiler",
-      title: "Le Pacha 2, Draveil.",
-      findUs: "Adres",
+      title: "Le Pacha, Draveil.",
+      findUs: "Adress",
       addressLine: "91210 Draveil, Fransa",
       items: [
         {

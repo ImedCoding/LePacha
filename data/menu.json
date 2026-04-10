@@ -1,0 +1,674 @@
+{
+  "source": {
+    "label": "Uber Eats",
+    "url": "https://www.ubereats.com/fr/store/le-pacha-2/mpdLkHqPQ42Z6RogjsnlsA",
+    "lastChecked": "2026-04-10",
+    "note": "Prix indicatifs releves sur Uber Eats. A ajuster si les prix sur place changent."
+  },
+  "photoDirectory": "/menu",
+  "photoInstructions": "Deposer les photos dans public/menu avec les noms photoFile ci-dessous. La page les affiche automatiquement quand les fichiers existent.",
+  "sections": [
+    {
+      "id": "assiettes",
+      "title": "Menus assiettes",
+      "shortTitle": "Assiettes",
+      "kicker": "Grill",
+      "description": "Grandes assiettes avec viandes, crudites, ble, frites et sauces.",
+      "photoFile": "menus-assiettes.jpg",
+      "items": [
+        {
+          "id": "menu-assiette-mixte",
+          "name": "Menu assiette mixte",
+          "description": "3 viandes, crudites, ble et 2 sauces pour les frites.",
+          "price": "19,50 €",
+          "tags": ["3 viandes", "Copieux"],
+          "photoFile": "menu-assiette-mixte.jpg"
+        },
+        {
+          "id": "menu-assiette-merguez",
+          "name": "Menu assiette merguez",
+          "description": "Merguez, crudites, ble et sauces pour les frites.",
+          "price": "15,90 €",
+          "tags": ["Merguez", "Grill"],
+          "photoFile": "menu-assiette-merguez.jpg"
+        },
+        {
+          "id": "menu-assiette-grecque",
+          "name": "Menu assiette grecque",
+          "description": "Viande grecque, crudites et sauces pour les frites.",
+          "price": "15,90 €",
+          "tags": ["Kebab", "Classique"],
+          "photoFile": "menu-assiette-grecque.jpg"
+        },
+        {
+          "id": "menu-assiette-cote-agneau",
+          "name": "Menu assiette cote d'agneau",
+          "description": "Cote d'agneau, crudites et sauces pour les frites.",
+          "price": "16,50 €",
+          "tags": ["Agneau", "Grill"],
+          "photoFile": "menu-assiette-cote-agneau.jpg"
+        },
+        {
+          "id": "menu-assiette-kefta",
+          "name": "Menu assiette kefta",
+          "description": "Kefta, crudites et sauces pour les frites.",
+          "price": "15,90 €",
+          "tags": ["Kefta", "Halal"],
+          "photoFile": "menu-assiette-kefta.jpg"
+        },
+        {
+          "id": "menu-assiette-brochette-poulet",
+          "name": "Menu assiette brochette de poulet",
+          "description": "Brochette de poulet, crudites et sauces pour les frites.",
+          "price": "15,90 €",
+          "tags": ["Poulet", "Grill"],
+          "photoFile": "menu-assiette-brochette-poulet.jpg"
+        },
+        {
+          "id": "menu-assiette-chicken",
+          "name": "Menu assiette chicken",
+          "description": "Chicken, crudites et sauces pour les frites.",
+          "price": "15,90 €",
+          "tags": ["Chicken", "Chaud"],
+          "photoFile": "menu-assiette-chicken.jpg"
+        },
+        {
+          "id": "menu-assiette-steak",
+          "name": "Menu assiette steak",
+          "description": "Steak, crudites et sauces pour les frites.",
+          "price": "13,40 €",
+          "tags": ["Steak", "Simple"],
+          "photoFile": "menu-assiette-steak.jpg"
+        }
+      ]
+    },
+    {
+      "id": "sandwichs",
+      "title": "Menus sandwichs",
+      "shortTitle": "Sandwichs",
+      "kicker": "Pain chaud",
+      "description": "Sandwichs halal servis avec frites, crudites et sauces au choix.",
+      "photoFile": "menus-sandwichs.jpg",
+      "items": [
+        {
+          "id": "menu-sandwich-grec",
+          "name": "Menu sandwich grec",
+          "description": "Viande grecque, crudites, sauces, frites et boisson.",
+          "price": "11,50 €",
+          "tags": ["Kebab", "Classique"],
+          "photoFile": "menu-sandwich-grec.jpg"
+        },
+        {
+          "id": "menu-sandwich-chicken",
+          "name": "Menu sandwich chicken",
+          "description": "Chicken, crudites, sauces, frites et boisson.",
+          "price": "11,50 €",
+          "tags": ["Chicken", "Sauces"],
+          "photoFile": "menu-sandwich-chicken.jpg"
+        },
+        {
+          "id": "menu-sandwich-2-viandes",
+          "name": "Menu sandwich 2 viandes",
+          "description": "2 viandes au choix, crudites, sauces, frites et boisson.",
+          "price": "13,50 €",
+          "tags": ["2 viandes", "Grosse faim"],
+          "photoFile": "menu-sandwich-2-viandes.jpg"
+        },
+        {
+          "id": "tacos",
+          "name": "Tacos",
+          "description": "2 viandes au choix : chicken, tenders, kebab, steak, merguez, nuggets ou cordon bleu.",
+          "price": "12,50 €",
+          "tags": ["Tacos", "2 viandes"],
+          "photoFile": "tacos.jpg"
+        },
+        {
+          "id": "menu-sandwich-3-viandes",
+          "name": "Menu sandwich 3 viandes",
+          "description": "3 viandes au choix, crudites, sauces, frites et boisson.",
+          "price": "15,50 €",
+          "tags": ["3 viandes", "Maxi"],
+          "photoFile": "menu-sandwich-3-viandes.jpg"
+        },
+        {
+          "id": "menu-sandwich-cordon-bleu",
+          "name": "Menu sandwich cordon bleu",
+          "description": "Cordon bleu, crudites, sauces, frites et boisson.",
+          "price": "11,50 €",
+          "tags": ["Cordon bleu", "Fondant"],
+          "photoFile": "menu-sandwich-cordon-bleu.jpg"
+        },
+        {
+          "id": "menu-sandwich-steak-fromage",
+          "name": "Menu sandwich steak fromage",
+          "description": "Steak fromage, crudites, sauces, frites et boisson.",
+          "price": "11,50 €",
+          "tags": ["Steak", "Fromage"],
+          "photoFile": "menu-sandwich-steak-fromage.jpg"
+        },
+        {
+          "id": "menu-sandwich-kefta",
+          "name": "Menu sandwich kefta",
+          "description": "Kefta, crudites, sauces, frites et boisson.",
+          "price": "11,50 €",
+          "tags": ["Kefta", "Grill"],
+          "photoFile": "menu-sandwich-kefta.jpg"
+        },
+        {
+          "id": "menu-sandwich-merguez",
+          "name": "Menu sandwich merguez",
+          "description": "Merguez, crudites, sauces, frites et boisson.",
+          "price": "11,50 €",
+          "tags": ["Merguez", "Chaud"],
+          "photoFile": "menu-sandwich-merguez.jpg"
+        },
+        {
+          "id": "menu-sandwich-brochette-poulet",
+          "name": "Menu sandwich brochette poulet",
+          "description": "Brochette de poulet, crudites, sauces, frites et boisson.",
+          "price": "11,50 €",
+          "tags": ["Poulet", "Grill"],
+          "photoFile": "menu-sandwich-brochette-poulet.jpg"
+        },
+        {
+          "id": "menu-sandwich-twister-chicken",
+          "name": "Menu sandwich twister chicken",
+          "description": "Twister chicken, sauce pour les frites, frites et boisson.",
+          "price": "11,50 €",
+          "tags": ["Twister", "Chicken"],
+          "photoFile": "menu-sandwich-twister-chicken.jpg"
+        }
+      ]
+    },
+    {
+      "id": "burgers",
+      "title": "Menus burgers",
+      "shortTitle": "Burgers",
+      "kicker": "Fast-food",
+      "description": "Burgers servis chauds avec frites.",
+      "photoFile": "menus-burgers.jpg",
+      "items": [
+        {
+          "id": "menu-chicken-burger",
+          "name": "Menu chicken burger",
+          "description": "Chicken burger servi avec frites.",
+          "price": "9,50 €",
+          "tags": ["Chicken", "Burger"],
+          "photoFile": "menu-chicken-burger.jpg"
+        },
+        {
+          "id": "menu-double-cheeseburger",
+          "name": "Menu double cheeseburger",
+          "description": "Double cheeseburger servi avec frites.",
+          "price": "13,50 €",
+          "tags": ["Double", "Fromage"],
+          "photoFile": "menu-double-cheeseburger.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tex-mex",
+      "title": "Menus tex-mex",
+      "shortTitle": "Tex-mex",
+      "kicker": "Croustillant",
+      "description": "Wings et nuggets servis avec frites et sauces.",
+      "photoFile": "menus-tex-mex.jpg",
+      "items": [
+        {
+          "id": "menu-wings-epices",
+          "name": "Menu wings epices",
+          "description": "Wings epices avec nombre de pieces et 2 sauces au choix. Servi avec frites.",
+          "price": "10,50 €",
+          "tags": ["Wings", "Epice"],
+          "photoFile": "menu-wings-epices.jpg"
+        },
+        {
+          "id": "menu-nuggets",
+          "name": "Menu nuggets",
+          "description": "Nuggets avec nombre de pieces et 2 sauces au choix. Servi avec frites.",
+          "price": "9,50 €",
+          "tags": ["Nuggets", "Croustillant"],
+          "photoFile": "menu-nuggets.jpg"
+        }
+      ]
+    },
+    {
+      "id": "paninis",
+      "title": "Menus paninis",
+      "shortTitle": "Paninis",
+      "kicker": "Grille",
+      "description": "Panini chaud avec garniture au choix, frites et sauce.",
+      "photoFile": "menus-paninis.jpg",
+      "items": [
+        {
+          "id": "menu-panini",
+          "name": "Menu panini",
+          "description": "Garniture au choix, servi avec frites et sauce pour les frites.",
+          "price": "10,50 €",
+          "tags": ["Panini", "Chaud"],
+          "photoFile": "menu-panini.jpg"
+        }
+      ]
+    },
+    {
+      "id": "accompagnements",
+      "title": "Accompagnements",
+      "shortTitle": "A cote",
+      "kicker": "Extras",
+      "description": "Pour completer une commande ou partager.",
+      "photoFile": "accompagnements.jpg",
+      "items": [
+        {
+          "id": "barquette-viande-grecque",
+          "name": "Barquette de viande grecque",
+          "description": "Taille au choix.",
+          "price": "12,00 €",
+          "tags": ["Viande", "Barquette"],
+          "photoFile": "barquette-viande-grecque.jpg"
+        },
+        {
+          "id": "barquette-frites",
+          "name": "Barquette de frites",
+          "description": "Taille au choix.",
+          "price": "5,50 €",
+          "tags": ["Frites", "A partager"],
+          "photoFile": "barquette-frites.jpg"
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "title": "Desserts",
+      "shortTitle": "Desserts",
+      "kicker": "Sucre",
+      "description": "Une touche sucree apres le sandwich ou l'assiette.",
+      "photoFile": "desserts.jpg",
+      "items": [
+        {
+          "id": "tiramisu",
+          "name": "Tiramisu",
+          "description": "Dessert italien au mascarpone, biscuits imbibes de cafe et cacao.",
+          "price": "4,00 €",
+          "tags": ["Frais", "Dessert"],
+          "photoFile": "tiramisu.jpg"
+        },
+        {
+          "id": "tarte-daim",
+          "name": "Tarte au Daim",
+          "description": "Dessert froid et gourmand.",
+          "price": "4,00 €",
+          "tags": ["Daim", "Dessert"],
+          "photoFile": "tarte-daim.jpg"
+        }
+      ]
+    },
+    {
+      "id": "boissons",
+      "title": "Boissons",
+      "shortTitle": "Boissons",
+      "kicker": "Frais",
+      "description": "Canettes et boissons fraiches.",
+      "photoFile": "boissons.jpg",
+      "items": [
+        {
+          "id": "lipton-ice-tea",
+          "name": "Lipton Ice Tea",
+          "description": "33 cl.",
+          "price": "2,00 €",
+          "tags": ["33 cl"],
+          "photoFile": "lipton-ice-tea.jpg"
+        },
+        {
+          "id": "orangina",
+          "name": "Orangina",
+          "description": "33 cl.",
+          "price": "2,00 €",
+          "tags": ["33 cl"],
+          "photoFile": "orangina.jpg"
+        },
+        {
+          "id": "coca-cola-zero",
+          "name": "Coca-Cola zero",
+          "description": "33 cl.",
+          "price": "2,00 €",
+          "tags": ["33 cl"],
+          "photoFile": "coca-cola-zero.jpg"
+        },
+        {
+          "id": "schweppes-agrum",
+          "name": "Schweppes agrum",
+          "description": "33 cl.",
+          "price": "2,00 €",
+          "tags": ["33 cl"],
+          "photoFile": "schweppes-agrum.jpg"
+        },
+        {
+          "id": "7-up",
+          "name": "7 Up",
+          "description": "33 cl.",
+          "price": "2,00 €",
+          "tags": ["33 cl"],
+          "photoFile": "7-up.jpg"
+        },
+        {
+          "id": "coca-cola",
+          "name": "Coca-Cola",
+          "description": "Taille au choix.",
+          "price": "2,00 €",
+          "tags": ["Frais"],
+          "photoFile": "coca-cola.jpg"
+        },
+        {
+          "id": "tropico",
+          "name": "Tropico",
+          "description": "33 cl.",
+          "price": "2,00 €",
+          "tags": ["33 cl"],
+          "photoFile": "tropico.jpg"
+        },
+        {
+          "id": "fanta",
+          "name": "Fanta",
+          "description": "Taille au choix.",
+          "price": "2,00 €",
+          "tags": ["Frais"],
+          "photoFile": "fanta.jpg"
+        },
+        {
+          "id": "oasis",
+          "name": "Oasis",
+          "description": "33 cl.",
+          "price": "2,00 €",
+          "tags": ["33 cl"],
+          "photoFile": "oasis.jpg"
+        },
+        {
+          "id": "cristaline-peche",
+          "name": "Cristaline peche",
+          "description": "50 cl.",
+          "price": "3,00 €",
+          "tags": ["50 cl"],
+          "photoFile": "cristaline-peche.jpg"
+        },
+        {
+          "id": "cristaline-fraise",
+          "name": "Cristaline fraise",
+          "description": "50 cl.",
+          "price": "3,00 €",
+          "tags": ["50 cl"],
+          "photoFile": "cristaline-fraise.jpg"
+        },
+        {
+          "id": "cristaline-tropical",
+          "name": "Cristaline tropical",
+          "description": "50 cl.",
+          "price": "2,00 €",
+          "tags": ["50 cl"],
+          "photoFile": "cristaline-tropical.jpg"
+        }
+      ]
+    }
+  ],
+  "translations": {
+    "tr": {
+      "sections": {
+        "assiettes": {
+          "title": "Tabak menuleri",
+          "shortTitle": "Tabaklar",
+          "kicker": "Izgara",
+          "description": "Et, salata, bulgur, patates ve soslarla doyurucu tabaklar.",
+          "items": {
+            "menu-assiette-mixte": {
+              "name": "Karisik tabak menu",
+              "description": "3 et, salata, bulgur ve patates icin 2 sos.",
+              "tags": ["3 et", "Doyurucu"]
+            },
+            "menu-assiette-merguez": {
+              "name": "Merguez tabak menu",
+              "description": "Merguez, salata, bulgur ve patates soslari.",
+              "tags": ["Merguez", "Izgara"]
+            },
+            "menu-assiette-grecque": {
+              "name": "Grec tabak menu",
+              "description": "Grec eti, salata ve patates soslari.",
+              "tags": ["Kebap", "Klasik"]
+            },
+            "menu-assiette-cote-agneau": {
+              "name": "Kuzu pirzola tabak menu",
+              "description": "Kuzu pirzola, salata ve patates soslari.",
+              "tags": ["Kuzu", "Izgara"]
+            },
+            "menu-assiette-kefta": {
+              "name": "Kofte tabak menu",
+              "description": "Kofte, salata ve patates soslari.",
+              "tags": ["Kofte", "Helal"]
+            },
+            "menu-assiette-brochette-poulet": {
+              "name": "Tavuk sis tabak menu",
+              "description": "Tavuk sis, salata ve patates soslari.",
+              "tags": ["Tavuk", "Izgara"]
+            },
+            "menu-assiette-chicken": {
+              "name": "Chicken tabak menu",
+              "description": "Chicken, salata ve patates soslari.",
+              "tags": ["Chicken", "Sicak"]
+            },
+            "menu-assiette-steak": {
+              "name": "Steak tabak menu",
+              "description": "Steak, salata ve patates soslari.",
+              "tags": ["Steak", "Sade"]
+            }
+          }
+        },
+        "sandwichs": {
+          "title": "Sandvic menuleri",
+          "shortTitle": "Sandvicler",
+          "kicker": "Sicak ekmek",
+          "description": "Patates, salata ve secili soslarla servis edilen helal sandvicler.",
+          "items": {
+            "menu-sandwich-grec": {
+              "name": "Grec sandvic menu",
+              "description": "Grec eti, salata, soslar, patates ve icecek.",
+              "tags": ["Kebap", "Klasik"]
+            },
+            "menu-sandwich-chicken": {
+              "name": "Chicken sandvic menu",
+              "description": "Chicken, salata, soslar, patates ve icecek.",
+              "tags": ["Chicken", "Soslar"]
+            },
+            "menu-sandwich-2-viandes": {
+              "name": "2 etli sandvic menu",
+              "description": "2 et secimi, salata, soslar, patates ve icecek.",
+              "tags": ["2 et", "Buyuk aclik"]
+            },
+            "tacos": {
+              "name": "Tacos",
+              "description": "2 et secimi: chicken, tenders, kebap, steak, merguez, nuggets veya cordon bleu.",
+              "tags": ["Tacos", "2 et"]
+            },
+            "menu-sandwich-3-viandes": {
+              "name": "3 etli sandvic menu",
+              "description": "3 et secimi, salata, soslar, patates ve icecek.",
+              "tags": ["3 et", "Maxi"]
+            },
+            "menu-sandwich-cordon-bleu": {
+              "name": "Cordon bleu sandvic menu",
+              "description": "Cordon bleu, salata, soslar, patates ve icecek.",
+              "tags": ["Cordon bleu", "Eriyik"]
+            },
+            "menu-sandwich-steak-fromage": {
+              "name": "Steak peynir sandvic menu",
+              "description": "Steak peynir, salata, soslar, patates ve icecek.",
+              "tags": ["Steak", "Peynir"]
+            },
+            "menu-sandwich-kefta": {
+              "name": "Kofte sandvic menu",
+              "description": "Kofte, salata, soslar, patates ve icecek.",
+              "tags": ["Kofte", "Izgara"]
+            },
+            "menu-sandwich-merguez": {
+              "name": "Merguez sandvic menu",
+              "description": "Merguez, salata, soslar, patates ve icecek.",
+              "tags": ["Merguez", "Sicak"]
+            },
+            "menu-sandwich-brochette-poulet": {
+              "name": "Tavuk sis sandvic menu",
+              "description": "Tavuk sis, salata, soslar, patates ve icecek.",
+              "tags": ["Tavuk", "Izgara"]
+            },
+            "menu-sandwich-twister-chicken": {
+              "name": "Twister chicken sandvic menu",
+              "description": "Twister chicken, patates sosu, patates ve icecek.",
+              "tags": ["Twister", "Chicken"]
+            }
+          }
+        },
+        "burgers": {
+          "title": "Burger menuleri",
+          "shortTitle": "Burgerler",
+          "kicker": "Fast-food",
+          "description": "Patatesle servis edilen sicak burgerler.",
+          "items": {
+            "menu-chicken-burger": {
+              "name": "Chicken burger menu",
+              "description": "Patatesle servis edilen chicken burger.",
+              "tags": ["Chicken", "Burger"]
+            },
+            "menu-double-cheeseburger": {
+              "name": "Double cheeseburger menu",
+              "description": "Patatesle servis edilen double cheeseburger.",
+              "tags": ["Double", "Peynir"]
+            }
+          }
+        },
+        "tex-mex": {
+          "title": "Tex-mex menuleri",
+          "shortTitle": "Tex-mex",
+          "kicker": "Citir",
+          "description": "Patates ve soslarla servis edilen wings ve nuggets.",
+          "items": {
+            "menu-wings-epices": {
+              "name": "Acili wings menu",
+              "description": "Adet secimi ve 2 sosla acili wings. Patatesle servis edilir.",
+              "tags": ["Wings", "Acili"]
+            },
+            "menu-nuggets": {
+              "name": "Nuggets menu",
+              "description": "Adet secimi ve 2 sosla nuggets. Patatesle servis edilir.",
+              "tags": ["Nuggets", "Citir"]
+            }
+          }
+        },
+        "paninis": {
+          "title": "Panini menuleri",
+          "shortTitle": "Panini",
+          "kicker": "Tost",
+          "description": "Secili garniturle sicak panini, patates ve sos.",
+          "items": {
+            "menu-panini": {
+              "name": "Panini menu",
+              "description": "Garnitur secimi, patates ve patates sosu ile servis edilir.",
+              "tags": ["Panini", "Sicak"]
+            }
+          }
+        },
+        "accompagnements": {
+          "title": "Yan urunler",
+          "shortTitle": "Ekstra",
+          "kicker": "Ekstra",
+          "description": "Siparisi tamamlamak veya paylasmak icin.",
+          "items": {
+            "barquette-viande-grecque": {
+              "name": "Grec eti porsiyonu",
+              "description": "Boy secimi.",
+              "tags": ["Et", "Porsiyon"]
+            },
+            "barquette-frites": {
+              "name": "Patates porsiyonu",
+              "description": "Boy secimi.",
+              "tags": ["Patates", "Paylasmalik"]
+            }
+          }
+        },
+        "desserts": {
+          "title": "Tatlilar",
+          "shortTitle": "Tatlilar",
+          "kicker": "Tatli",
+          "description": "Sandvic veya tabaktan sonra tatli bir final.",
+          "items": {
+            "tiramisu": {
+              "name": "Tiramisu",
+              "description": "Mascarpone, kahveye batirilmis biskuvi ve kakao ile Italyan tatlisi.",
+              "tags": ["Soguk", "Tatli"]
+            },
+            "tarte-daim": {
+              "name": "Daim tart",
+              "description": "Soguk ve lezzetli tatli.",
+              "tags": ["Daim", "Tatli"]
+            }
+          }
+        },
+        "boissons": {
+          "title": "Icecekler",
+          "shortTitle": "Icecekler",
+          "kicker": "Soguk",
+          "description": "Kutular ve soguk icecekler.",
+          "items": {
+            "lipton-ice-tea": {
+              "description": "33 cl.",
+              "tags": ["33 cl"]
+            },
+            "orangina": {
+              "description": "33 cl.",
+              "tags": ["33 cl"]
+            },
+            "coca-cola-zero": {
+              "name": "Coca-Cola zero",
+              "description": "33 cl.",
+              "tags": ["33 cl"]
+            },
+            "schweppes-agrum": {
+              "description": "33 cl.",
+              "tags": ["33 cl"]
+            },
+            "7-up": {
+              "description": "33 cl.",
+              "tags": ["33 cl"]
+            },
+            "coca-cola": {
+              "description": "Boy secimi.",
+              "tags": ["Soguk"]
+            },
+            "tropico": {
+              "description": "33 cl.",
+              "tags": ["33 cl"]
+            },
+            "fanta": {
+              "description": "Boy secimi.",
+              "tags": ["Soguk"]
+            },
+            "oasis": {
+              "description": "33 cl.",
+              "tags": ["33 cl"]
+            },
+            "cristaline-peche": {
+              "name": "Cristaline seftali",
+              "description": "50 cl.",
+              "tags": ["50 cl"]
+            },
+            "cristaline-fraise": {
+              "name": "Cristaline cilek",
+              "description": "50 cl.",
+              "tags": ["50 cl"]
+            },
+            "cristaline-tropical": {
+              "name": "Cristaline tropikal",
+              "description": "50 cl.",
+              "tags": ["50 cl"]
+            }
+          }
+        }
+      }
+    }
+  }
+}

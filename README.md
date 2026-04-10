@@ -52,6 +52,7 @@ Lance la version de production apres un build.
 app/
   layout.tsx       Metadata, favicon, SEO global
   page.tsx         Sections principales de la landing page
+  menu/page.tsx    Page menu complet
   globals.css      Styles globaux, effets visuels, animations
 components/
   button-link.tsx
@@ -59,8 +60,10 @@ components/
   sticky-mobile-bar.tsx
 data/
   restaurant.ts    Donnees restaurant + textes FR/TR
+  menu.json        Menu complet + noms des fichiers photo
 public/
   logo.png         Logo utilise dans la navbar et en favicon
+  menu/            Photos locales des plats
 ```
 
 ## Modifier le contenu
@@ -83,6 +86,26 @@ Principaux champs a modifier :
 - `content.fr`
 - `content.tr`
 
+## Modifier le menu
+
+Le menu complet de la page `/menu` se trouve dans :
+
+```text
+data/menu.json
+```
+
+Chaque section contient :
+
+- `title`, `shortTitle`, `description`
+- `items`
+- `price`
+- `photoFile`
+- `translations.tr` pour les textes turcs du menu complet
+
+Pour ajouter ou modifier un plat, editer uniquement `data/menu.json`.
+Les prix actuels sont des prix indicatifs releves depuis Uber Eats le
+10 avril 2026.
+
 ## Images
 
 Les images de nourriture utilisent actuellement des URLs Unsplash configurees dans `next.config.mjs`.
@@ -96,6 +119,24 @@ public/logo.png
 ```
 
 Il est utilise dans la navbar et declare comme favicon dans `app/layout.tsx`.
+
+Les photos du menu doivent etre ajoutees dans :
+
+```text
+public/menu/
+```
+
+Utiliser les noms indiques dans `data/menu.json`, par exemple :
+
+```text
+public/menu/menu-sandwich-grec.jpg
+public/menu/menu-assiette-mixte.jpg
+public/menu/tacos.jpg
+```
+
+Si une photo n'existe pas encore, la page garde un visuel sombre de
+remplacement sans casser l'affichage. Apres ajout de photos, relancer le
+serveur de dev ou refaire un build pour regenerer la page.
 
 ## Design
 

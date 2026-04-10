@@ -36,6 +36,7 @@ export default function Home() {
   return (
     <>
       <SiteHeader
+        activePage="home"
         locale={locale}
         nextLocale={nextLocale}
         onLocaleChange={setLocale}
@@ -49,7 +50,7 @@ export default function Home() {
         <PracticalInfo t={t.info} nav={t.nav} />
         <FinalCta t={t.finalCta} nav={t.nav} locale={locale} />
       </main>
-      <StickyMobileBar t={t.nav} />
+      <StickyMobileBar activePage="home" t={t.nav} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -147,7 +148,7 @@ function Hero({
               {t.primary}
             </ButtonLink>
             <ButtonLink
-              href="#menu"
+              href="/menu"
               variant="secondary"
               className="min-h-14 px-3 text-sm"
             >
@@ -171,7 +172,7 @@ function Hero({
               {t.primary}
             </ButtonLink>
             <ButtonLink
-              href="#menu"
+              href="/menu"
               variant="secondary"
               className="min-h-16 px-7"
             >
@@ -345,6 +346,13 @@ function MenuHighlights({ t }: { t: (typeof content.fr)["menu"] }) {
             <p className="mt-5 max-w-lg text-base leading-7 text-ash/72">
               {t.text}
             </p>
+            <ButtonLink
+              href="/menu"
+              variant="primary"
+              className="mt-7 min-h-14 px-6 text-sm"
+            >
+              {t.fullCta}
+            </ButtonLink>
             <div className="menu-spotlight relative mt-8 h-[28rem] overflow-hidden border border-ember/45 bg-coal shadow-ember">
               <Image
                 src={restaurant.images.menuSpotlight}
