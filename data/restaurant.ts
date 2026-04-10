@@ -40,7 +40,7 @@ export const content = {
       info: "Infos",
       call: "Appeler",
       order: "Commander",
-      stickyOrder: "Uber",
+      stickyOrder: "Commander",
       lang: "TR"
     },
     hero: {
