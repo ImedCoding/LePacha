@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  background: #0d0d0d;
+}
+
+* {
+  box-sizing: border-box;
+  letter-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 78% 8%, rgba(255, 106, 0, 0.18), transparent 30rem),
+    radial-gradient(circle at 0% 42%, rgba(166, 27, 27, 0.18), transparent 28rem),
+    #0d0d0d;
+  color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: rgba(255, 106, 0, 0.8);
+  color: #0d0d0d;
+}
+
+.fire-noise {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 34px 34px;
+}
+
+.brand-outline {
+  -webkit-text-stroke: 1px rgba(255, 106, 0, 0.72);
+  text-stroke: 1px rgba(255, 106, 0, 0.72);
+}
+
+.text-shadow-fire {
+  text-shadow:
+    0 0 22px rgba(255, 106, 0, 0.22),
+    0 18px 54px rgba(0, 0, 0, 0.72);
+}
+
+.food-stage,
+.mobile-food-burst,
+.menu-spotlight,
+.street-panel {
+  clip-path: polygon(0 0, 100% 3%, 94% 100%, 0 96%);
+}
+
+.brand-stamp {
+  clip-path: polygon(0 0, 100% 0, 92% 100%, 0 92%);
+}
+
+.brand-button {
+  clip-path: polygon(0 0, 100% 0, calc(100% - 0.65rem) 100%, 0 100%);
+}
+
+.proof-ticket {
+  background:
+    linear-gradient(90deg, rgba(255, 106, 0, 0.18), transparent 22%),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 18px);
+}
+
+.menu-blade {
+  transition:
+    background-color 180ms ease,
+    padding-left 180ms ease,
+    border-color 180ms ease;
+}
+
+.menu-blade:hover {
+  background: linear-gradient(90deg, rgba(255, 106, 0, 0.12), transparent 52%);
+  padding-left: 0.75rem;
+}
+
+.brand-marquee {
+  width: max-content;
+  padding-left: 1.25rem;
+  animation: brandTicker 26s linear infinite;
+}
+
+@keyframes brandTicker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.333%);
+  }
+}
+
+.heat-haze {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.heat-haze::before,
+.heat-haze::after {
+  content: "";
+  position: absolute;
+  bottom: -18%;
+  width: 22rem;
+  height: 42rem;
+  background: linear-gradient(to top, rgba(255, 106, 0, 0.2), transparent 68%);
+  filter: blur(22px);
+  opacity: 0.45;
+  transform: rotate(8deg);
+  animation: heatRise 7s ease-in-out infinite alternate;
+}
+
+.heat-haze::before {
+  left: 5%;
+}
+
+.heat-haze::after {
+  right: 10%;
+  animation-delay: -2.4s;
+  transform: rotate(-10deg);
+}
+
+@keyframes heatRise {
+  from {
+    transform: translateY(0) skewX(-3deg);
+    opacity: 0.28;
+  }
+  to {
+    transform: translateY(-42px) skewX(4deg);
+    opacity: 0.48;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .heat-haze::before,
+  .heat-haze::after,
+  .brand-marquee {
+    animation: none;
+  }
+}
