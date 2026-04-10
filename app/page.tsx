@@ -100,7 +100,7 @@ function Hero({
         <div className="relative">
           <div className="mb-6 inline-flex border border-ember bg-charcoal px-4 py-2 text-xs font-black uppercase text-ember shadow-ember">
             <div className="flex items-center gap-4">
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 lg:hidden">
                 <span className="text-xs font-black leading-none text-ember">
                   {restaurant.rating.value}
                 </span>
