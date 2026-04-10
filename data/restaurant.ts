@@ -86,7 +86,7 @@ export const content = {
         text: "Kebab, pizza ou burger, on repart cale."
       },
       {
-        title: "Pratique le soir",
+        title: "Disponible toute la journée",
         text: "Une adresse simple a retenir pour manger sur Draveil."
       }
     ],
